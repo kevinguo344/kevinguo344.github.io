@@ -6,20 +6,38 @@ import ScreenSection from "../components/screen-section";
 import Styles from "../style/styles.scss";
 
 export default () =>
-	<PageView>
-		<h1>Hi, I'm Kevin</h1>
-		<h1>This is my website</h1>
-		<h1>I'm a designer, programmer, and engineer</h1>
-		<h1>My goal is to break UX from the screen...</h1>
-		<h1>...and into the world.</h1>
-		<h1>I'm interested in the intersection of the physical and the digital, in the confluence of design, technology, and things that don't mix with either.</h1>
-		<h1>I want to build the novel</h1>
-		<div>
-			<Link to="/projects">See my Projects</Link>
-		</div>
-		<Screen>
-			<ScreenSection></ScreenSection>
-			<ScreenSection></ScreenSection>
-			<ScreenSection></ScreenSection>
-		</Screen>
-	</PageView>
+	<div>
+		<PageView>
+			<div className="titlecard center">
+				<h1>Hi, I'm Kevin</h1>
+				<h1>This is my website</h1>
+			</div>
+		</PageView>
+		<PageView>
+			<div className="titlecard top">
+				<h1>I'm a...</h1>
+				<h2>designer</h2>
+				<h2>programmer</h2>
+				<h2>engineer</h2>
+			</div>
+		</PageView>
+		<PageView>
+			<div className="titlecard center left">
+				<h1>I work in the intersection of the physical and digital</h1>
+			</div>
+		</PageView>
+		<PageView>
+			<div className="titlecard center right">
+				<h1>I'm interested in the merging of design, technology, and things unrelated</h1>
+			</div>
+		</PageView>
+		<PageView>
+			<div className="titlecard top">
+				<h1>See my work here</h1>
+			</div>
+			<div>
+				<Link to="/projects">See my Projects</Link>
+			</div>
+		</PageView>
+			
+	</div>

@@ -1,23 +1,87 @@
 $black: #110E33;
+$break-xlarge: 1024px;
+$break-large: 822px;
+$break-medium: 768px;
+$break-small: 320px;
 
+h1{ font-size: 72px; }
+h2{ font-size: 48px; }
 .page-view {
 	margin: auto;
 	margin-bottom: 0;
-	margin-top: 6em;
-	max-width: 804px;
-	height: calc(100vh - 6em);
+	max-width: $break-xlarge;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	border-bottom: solid $black 2px;
 }
 .screen {
 	margin: auto;
-	max-width: 804px;
-	height: 50vh;
-	/*border-radius: 48px 48px 0px 0px;*/
+	max-width: $break-large;
+	height: calc(85vh);
 	border-radius: 3em 3em 0px 0px;
-	border-left: 1.5em $black solid;
-	border-right: 1.5em $black solid;
-	border-top: 1.5em $black solid;
+	border: 1.5em $black solid;
 }
 .screen-section {
 	width: 33%;
 	background: blue;
+}
+.titlecard{
+	position: absolute;
+}
+.titlecard.top{
+	top: 15%;
+}
+.titlecard.center{
+	top: 50%;
+	transform: translateY(-50%);
+}
+.titlecard.right{
+	width: 66%;
+	right: 0;
+	text-align: right;
+}
+.titlecard.left{
+	width: 66%;
+	left: 0;
+	text-align: left;
+}
+@media screen and (max-width: $break-xlarge){
+	h1{ font-size: 48px; }
+	h2{ font-size: 32px; }
+	.page-view {
+		max-width: $break-large;
+	}
+	.titlecard.right{
+		width: 50%;
+	}
+	.titlecard.left{
+		width: 50%;
+	}
+}
+@media screen and (max-width: $break-large){
+	h1{ font-size: 32px; }
+	h2{ font-size: 18px; }
+	.page-view {
+		max-width: $break-medium;
+	}
+	.titlecard.right{
+		width: 50%;
+	}
+	.titlecard.left{
+		width: 50%;
+	}
+}
+@media screen and (max-width: $break-medium){
+	h1{ font-size: 32px; }
+	h2{ font-size: 18px; }
+	.page-view {
+		max-width: $break-small;
+	}
+	.titlecard.right{
+		width: 100%;
+	}
+	.titlecard.left{
+		width: 100%;
+	}
 }
