@@ -1,7 +1,24 @@
-.page-view{
+$black: #110E33;
+
+.page-view {
 	margin: auto;
 	margin-bottom: 0;
 	margin-top: 6em;
 	max-width: 804px;
 	height: calc(100vh - 6em);
+}
+.screen {
+	margin: auto;
+	max-width: 804px;
+	height: 100%;
+	/*border-radius: 48px 48px 0px 0px;*/
+	border-radius: 3em 3em 0px 0px;
+	border-left: 1.5em $black solid;
+	border-right: 1.5em $black solid;
+	border-top: 1.5em $black solid;
+}
+.screen-section {
+	width: 33%;
+	height: 100%;
+	background: blue;
 }

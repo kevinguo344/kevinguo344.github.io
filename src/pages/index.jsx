@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "gatsby-link";
 import PageView from "../components/page-view";
+import Screen from "../components/screen";
+import ScreenSection from "../components/screen-section";
 import Styles from "../style/styles.scss";
 
 export default () =>
@@ -15,4 +17,9 @@ export default () =>
 		<div>
 			<Link to="/projects">See my Projects</Link>
 		</div>
+		<Screen>
+			<ScreenSection></ScreenSection>
+			<ScreenSection></ScreenSection>
+			<ScreenSection></ScreenSection>
+		</Screen>
 	</PageView>
