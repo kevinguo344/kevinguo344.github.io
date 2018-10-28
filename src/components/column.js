@@ -3,6 +3,10 @@ import React from 'react'
 import './skeleton.css'
 import './normalize.css'
 
+const titleCard = {
+	marginTop: "25%"
+}
+
 class Column extends React.Component{
 	constructor(props){
 		super(props);
@@ -12,8 +16,10 @@ class Column extends React.Component{
 		else{ this.width = "column"; }
 
 		this.offset = this.stringToNum(this.props.offset);
-		if(this.offset != null){ this.offset =  "offset-by-" + this.offset; }
+		if(this.offset != null){ this.offset =  " offset-by-" + this.offset; }
 		else{ this.offset = ""; }
+
+		if(this.props.title === "true"){ this.style = titleCard; }
 	}
 	stringToNum(w){
 		let a;
@@ -57,7 +63,7 @@ class Column extends React.Component{
 	}
 	render(){
         return(
-			<div className = {this.width + this.offset}>
+			<div className = {this.width + this.offset} style={this.style}>
 				{this.props.children}
 			</div>
 		)
