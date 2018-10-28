@@ -7,8 +7,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: "markdown-pages",
+        path: `${__dirname}/src/markdown`,
       },
     },
     'gatsby-transformer-sharp',
@@ -26,5 +26,13 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "markdown-pages",
+        path: `${__dirname}/src/markdown`,
+      },
+    },
+    `gatsby-transformer-remark`,
   ],
 }
