@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import {Row} from './components/row.jsx';
-import {Column} from './components/column.jsx';
-import {Container} from './components/container.jsx';
+import {Row, Column, Container} from './components/skeleton.jsx';
+
 import Markdown from 'markdown-to-jsx';
 const mdFile = require('./markdown/test.md');
 
