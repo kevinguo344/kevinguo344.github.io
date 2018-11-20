@@ -1,6 +1,7 @@
 import React from 'react'
 import {Column} from './skeleton.jsx';
 import "./style.css";
+import {Router} from 'react-router-dom';
 
 export class Tile extends React.Component{
 	constructor(props){
