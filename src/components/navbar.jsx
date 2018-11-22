@@ -7,7 +7,7 @@ export class Navbar extends React.Component{
 		return (
 			<Row>
 				<Link to = "/">
-					<h1>Kevin Guo</h1>
+					<h2>Kevin Guo</h2>
 				</Link>
 			</Row>
 		)
