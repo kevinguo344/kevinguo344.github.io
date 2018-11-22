@@ -2,7 +2,6 @@ import React from 'react'
 import {Column} from './skeleton.jsx';
 import "./style.css";
 import { Link } from 'react-router-dom';
-
 export class Tile extends React.Component{
 	constructor(props){
 		super(props);
@@ -37,7 +36,7 @@ let projects = {
 		title: "CrochetMatic",
 		sub: "Knitting in 3D",
 		link: "research/crochetmatic",
-		img: "./assets/roma.png"
+		img: "./assets/crochetmatic.svg"
 	},
 	distopia: {
 		title: "Distopia",
