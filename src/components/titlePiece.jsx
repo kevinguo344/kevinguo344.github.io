@@ -30,7 +30,7 @@ let projects = {
 	roma: {
 		title: "RoMA",
 		sub: "Interactive Fabrication in AR",
-		link: "roma",
+		link: "research/roma",
 	},
 	crochetmatic: {
 		title: "CrochetMatic",
