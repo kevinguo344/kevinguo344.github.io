@@ -4,21 +4,22 @@ import {RoMA, CrochetMatic, Distopia, TransForm} from './pages/research.jsx';
 import {Cuberpillar, OcularMD, CIAC, LCL, CUEMS} from './pages/designs.jsx';
 import { BrowserRouter as Router, Route} from 'react-router-dom'
 
+
 class App extends Component {
 	render() {
 		return (
 			<Router>
 				<div>
 					<Route exact path ="/" component={Home}></Route>
-					<Route path="research/roma" component={RoMA}></Route>
-					<Route path="research/crochetmatic" component={CrochetMatic}></Route>
-					<Route path="research/distopia" component={Distopia}></Route>
-					<Route path="research/transform" component={TransForm}></Route>
-					<Route path="designs/cuberpillar" component={Cuberpillar}></Route>
-					<Route path="designs/ocularmd" component={OcularMD}></Route>
-					<Route path="designs/ciac" component={CIAC}></Route>
-					<Route path="designs/lcl" component={LCL}></Route>
-					<Route path="designs/cornellems" component={CUEMS}></Route>
+					<Route exact path="/research/roma" render={RoMA}></Route>
+					<Route exact path="/research/crochetmatic" component={CrochetMatic}></Route>
+					<Route exact path="/research/distopia" component={Distopia}></Route>
+					<Route exact path="/research/transform" component={TransForm}></Route>
+					<Route exact path="/designs/cuberpillar" render={Cuberpillar}></Route>
+					<Route exact path="/designs/ocularmd" component={OcularMD}></Route>
+					<Route exact path="/designs/ciac" component={CIAC}></Route>
+					<Route exact path="/designs/lcl" component={LCL}></Route>
+					<Route exact path="/designs/cuems" component={CUEMS}></Route>
 				</div>
 			</Router>
 		);
