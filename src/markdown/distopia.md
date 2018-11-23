@@ -1,6 +1,6 @@
 # Distopia
 
-Lorem ipsum dolor sit amet.
+http://hrc2.io/projects/Collaborative-Design
 
 ## The First Part **h2**
 
