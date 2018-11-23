@@ -64,3 +64,10 @@ a {
 	top: 0em;
 }
 
+.projects img{
+	margin: auto;
+}
+.projects .framer{
+	height: 313.5px;
+	overflow: hidden;
+}

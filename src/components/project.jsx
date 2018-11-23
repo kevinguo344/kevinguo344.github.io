@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Row, Column, Container} from './skeleton.jsx';
 import Navbar from './navbar.jsx';
+import "./style.css";
 
 class Project extends Component {
 	render() {
@@ -8,7 +9,7 @@ class Project extends Component {
 			<Container>
 				<Navbar></Navbar>
 				<Row>
-					<Column width="12">
+					<Column className="projects" width="12">
 						{this.props.children}
 					</Column>
 				</Row>
