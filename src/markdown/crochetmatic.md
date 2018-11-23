@@ -55,7 +55,18 @@ Which were promising and seemed to match the real life knits I made.
 
 ### Building the Needles
 
-With an idea of what the final knits would look like, it was onto building the machine
+With an idea of what the final knits would look like, it was onto building the machine itself. This ended up being the most challenging part of the project. The machine was separated into 3 parts:
+1. An XY Bed powered by an Arduino Mega and RAMPS board
+2. An array of needles powered by a Teensy 3.5 board
+3. A yarn extruder
+
+### XY Bed
+The XY bed was built and assembled by [Prof. Scott Hudson](https://hcii.cmu.edu/people/scott-hudson) from Carnegie Mellon University. Based off a regular 3D printer bed, it\'s made up of a (get measurements) 80-20 frame driven by an Arduino Mega with a RAMPS board mounted on it. The Arduino Mega controlled most of the movements on the machine with a RAMPS 1.4 board. The RAMPS board was typically meant for building DIY 3D printers, but because of CrochetMatic didn't have a heating element, I had to put two resistors and a potentiometer (a dial) attached to where the heat sensors were supposed to be. This was to trick the board into thinking that there is a heating element on the machine (there isn’t) so that it will use the extruder properly (how the latch servos and the yarn extruder are operated).
+
+### Needle Array
+3D knitting (or Volumetric knitting) was untried while I was working on the project, and the most daunting part was figuring out how to build the needles. The idea was to build an entire "bed" of needles, but what they would look like and how they would work was completely unknown. 
+
+Because we were using off-the-shelf parts for the unusual task of creating knits, it required some hacking together. A
 
 ### So Much Testing
 
