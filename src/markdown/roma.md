@@ -6,8 +6,8 @@
 *That's me in the pic!*
 </span>
 
-##### Huaishu Peng, Jimmy Briggs, Cheng-Yao Wang, **Kevin Guo**, Joseph Kider, Stefanie Mueller, Patrick Baudisch, François Guimbretière
-##### **2018 Conference on Human Factors in Computing Systems (CHI 2018)** 
+##### Authors: Huaishu Peng, Jimmy Briggs, Cheng-Yao Wang, **Kevin Guo**, Joseph Kider, Stefanie Mueller, Patrick Baudisch, François Guimbretière
+##### 2018 Conference on Human Factors in Computing Systems **(CHI 2018)** 
 [Read the Paper here](http://www.huaishu.me/projects/roma.pdf)
 
 <span style="display:block;text-align:center">
