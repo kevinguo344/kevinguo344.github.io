@@ -44,26 +44,26 @@ I proposed 3 menu interaction schemes and made interactive Javascript prototypes
 <div class="row">
 	<div class="four columns" style="display:block;text-align:center">
 		<h4>Stack Menu</h4>
-		<img src="./images/stack.svg" alt="AR Interactions" width="50%" style="margin: 0 auto"/>
+		<img src="./images/stack.svg" alt="AR Interactions" width="50%" style="margin: 0 auto"><img/>
 	</div>
 	<div class="four columns" style="display:block;text-align:center">
 		<h4>Tree Menu</h4>
-		<img src="./images/tree.svg" alt="AR Interactions" width="50%" style="margin: 0 auto"/>
+		<img src="./images/tree.svg" alt="AR Interactions" width="50%" style="margin: 0 auto"><img/>
 	</div>
 	<div class="four columns" style="display:block;text-align:center">
 		<h4>Ring Menu</h4>
-		<img src="./images/ring.svg" alt="AR Interactions" width="50%" style="margin: 0 auto"/>
+		<img src="./images/ring.svg" alt="AR Interactions" width="50%" style="margin: 0 auto"><img/>
 	</div>
 </div>
 <div class="row">
-	<div class="four columns" style="display:block;text-align:center; height:300px; overflow:hidden; margin-bottom: 2em">
-		<iframe class="framer" src="https://framer.cloud/ilfyY/" width="513" height="600" style="display:block;transform:scale(0.45);transform-origin: top left;border:none"></iframe>
+	<div class="four columns" style="display:block;text-align:center; height:350px; overflow:hidden; margin-bottom: 2em">
+		<iframe class="framer" src="https://framer.cloud/ilfyY/" width="600" height="900" style="display:block;transform:scale(0.5);transform-origin: top left; border:none"></iframe>
 	</div>
-	<div class="four columns" style="display:block;text-align:center; height:300px; overflow:hidden; margin-bottom: 2em">
-		<iframe class="framer" src="https://framer.cloud/agbTc/" width="513" height="600" style="display:block;transform:scale(0.45);transform-origin: top left;border:0;"></iframe>
+	<div class="four columns" style="display:block;text-align:center; height:350px; overflow:hidden; margin-bottom: 2em">
+		<iframe class="framer" src="https://framer.cloud/agbTc/" width="600" height="900" style="display:block;transform:scale(0.5);transform-origin: top left; border:none;"></iframe>
 	</div>
-	<div class="four columns" style="display:block;text-align:center; height:300px; overflow:hidden; margin-bottom: 2em">
-		<iframe class="framer" src="https://framer.cloud/HcxQi/" width="513" height="600" style="display:block;transform:scale(0.45);transform-origin: top left;border:none"></iframe>
+	<div class="four columns" style="display:block;text-align:center; height:350px; overflow:hidden; margin-bottom: 2em">
+		<iframe class="framer" src="https://framer.cloud/HcxQi/" width="600" height="900" style="display:block;transform:scale(0.5);transform-origin: top left;border:none"></iframe>
 	</div>
 </div>
 
