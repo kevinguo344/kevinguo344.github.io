@@ -77,7 +77,28 @@ The XY bed was built and assembled by [Prof. Scott Hudson](https://hcii.cmu.edu/
 *Simulation of a single knit on an industry knitting machine from [A Compiler for 3D Machine Knitting](https://www.disneyresearch.com/publication/machine-knitting-compiler/)*
 </span>
 
-The needles for our machine went through multiple iterations, with each version drastically different from the previous versions
+The needles for our machine went through multiple iterations, with each version drastically different from the previous versions.
+
+<div class="row">
+	<div class="four columns" style="display:block;text-align:center">
+		<span style="display:block;text-align:center">
+		<img src="./images/first_version.svg" alt="Junction" width="50%" style="margin: 0 auto"/>
+		*Initial Needle Design*
+		</span>
+	</div>
+	<div class="four columns" style="display:block;text-align:center">
+		<span style="display:block;text-align:center">
+		<img src="./images/next_version.svg" alt="Basic" width="40%" style="margin: 0 auto"/>
+		*Needle Design 7.0*
+		</span>
+	</div>
+	<div class="four columns" style="display:block;text-align:center">
+		<span style="display:block;text-align:center">
+		<img src="./images/junction.png" alt="Junction" width="100%" style="margin: 0 auto"/>
+		*Junction knit voxels*
+		</span>
+	</div>
+</div>
 
 <span style="display:block;text-align:center">
 <img src="./images/steps.svg" alt="Label" width="100%" style="margin: 0 auto"/>
