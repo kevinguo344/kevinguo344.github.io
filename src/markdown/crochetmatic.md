@@ -55,7 +55,7 @@ Each knit followed a path of points, which I was able to export and joint togeth
 Which were promising and seemed to match the real life knits I made.
 
 <span style="display:block;text-align:center">
-<img src="./images/real_prism.jpg" alt="Label" width="35%" style="margin: 0 auto"/>
+<img src="./images/real_prism.jpg" alt="Label" width="50%" style="margin: 0 auto"/>
 *Knitted "Cube" I made*
 </span>
 
@@ -94,11 +94,13 @@ The needles for our machine went through multiple iterations, with each version 
 	</div>
 	<div class="four columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/junction.png" alt="Junction" width="100%" style="margin: 0 auto"/>
-		*Junction knit voxels*
+		<img src="./images/next_version.svg" alt="Basic" width="40%" style="margin: 0 auto"/>
+		*Final Version*
 		</span>
 	</div>
 </div>
+
+The final needle version required minimal custom parts and instead relied upon off-the-shelf 0.125\" and 0.25\" diameter aluminum rods nested in one another. The hooks and pushers were 3D printed and manually fitted onto the pipes using force, glue, and rolled-up masking tape. The outer and inner components were each driven by rack-and-pinion mechanism with a motor module. Each module had an SG90 servo motor, which not only small but also cheap, meaning that each needle could be driven by two. With 
 
 <span style="display:block;text-align:center">
 <img src="./images/steps.svg" alt="Label" width="100%" style="margin: 0 auto"/>
