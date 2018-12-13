@@ -2,11 +2,16 @@
 ###### May 2017 - May 2018
 ##### People: **Kevin Guo**, Olav Imsdahl, François Guimbretière, Scott Hudson
 
+<span style="display:block;text-align:center">
+<img src="./images/crochetmatic.png" alt="That's me in that pic" width="75%" style="margin: 0 auto"/>
+*CrochetMatic in full*
+</span>
+
 I worked on CrochetMatic during my time at [Prof. François Guimbretière\'s Design Lab](https://www.cs.cornell.edu/~francois/). CrochetMatic was easily one of the most time-consuming and difficult projects. While I didn\'t reach the ultimate goal, I believe that I learned an immense amount from my struggles with this project.
 
 ### In the Beginning...
 
-The initial idea was to build a machine that could build knitted objects the same way 3D printers build their prints: additive and layer-by-layer. But while plastic has relatively predictable properties and can be put through an extruder, a length of yarn\'s properties can change from bundle to bundle. Also, it can get caught on small mechanisms which makes it hard to build around.
+The initial idea was to build a machine that could build knitted objects the same way 3D printers build their prints: additive and layer-by-layer. But while plastic has relatively predictable properties and can be put through an extruder, a length of yarn\'s properties can change from bundle to bundle. Also, it can get caught on small mechanisms which makes it hard to build around. Furthermore, the idea of knitting 3D volumes, whether by hand or machine had never really been tried before. Through our research, the closest antecendent to our project was [a 3D knitting compiler](https://www.disneyresearch.com/publication/machine-knitting-compiler/) from Carnegie Mellon University. Even the knitting compiler only created knitted tubes that had to be filled afterwards.
 
 At the suggestion of [Prof. Steve Marschner](http://www.cs.cornell.edu/~srm/), the preeminent computer graphics professor at Cornell (and probably the world, he won an Oscar for his CG research), the individual knits were throught of as a series of voxels, or volumes in a 3D grid. This was coming off of his previous work simulating knit clothes [(more details here.)](http://www.cs.cornell.edu/projects/YarnCloth/)
 
@@ -100,14 +105,19 @@ The needles for our machine went through multiple iterations, with each version 
 	</div>
 </div>
 
-The final needle version required minimal custom parts and instead relied upon off-the-shelf 0.125\" and 0.25\" diameter aluminum rods nested in one another. The hooks and pushers were 3D printed and manually fitted onto the pipes using force, glue, and rolled-up masking tape. The outer and inner components were each driven by rack-and-pinion mechanism with a motor module. Each module had an SG90 servo motor, which not only small but also cheap, meaning that each needle could be driven by two. With 
+The final needle version required minimal custom parts and instead relied upon off-the-shelf 0.125\" and 0.25\" diameter aluminum rods nested in one another. The hooks and pushers were 3D printed and manually fitted onto the pipes using force, glue, and rolled-up masking tape. The outer and inner components were each driven by rack-and-pinion mechanism with a motor module. Each module had an SG90 servo motor, which were not only small but also cheap, meaning that each needle could be driven by two motors. With 
 
 <span style="display:block;text-align:center">
 <img src="./images/steps.svg" alt="Label" width="100%" style="margin: 0 auto"/>
-*Steps to create knots*
+*Steps to create a knit*
 </span>
 
 Because we were using off-the-shelf parts for the unusual task of creating knits, it required some hacking together. A
+
+<span style="display:block;text-align:center">
+<img src="./images/scarf.png" alt="Label" width="50%" style="margin: 0 auto"/>
+*Steps to create knots*
+</span>
 
 ### So Much Testing
 
