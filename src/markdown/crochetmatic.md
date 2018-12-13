@@ -99,8 +99,8 @@ The needles for our machine went through multiple iterations, with each version 
 	</div>
 	<div class="four columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/next_version.svg" alt="Basic" width="40%" style="margin: 0 auto"/>
-		*Final Version*
+		<img src="./images/final_version.svg" alt="Basic" width="70%" style="margin: 0 auto"/>
+		*Final Version (partially cut off)*
 		</span>
 	</div>
 </div>
