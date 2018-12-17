@@ -17,6 +17,16 @@ p{
 .pageView{
 	min-height: 100vh;
 	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.pageContainer{
+	display: block;
+	width: 100%;
+}
+.pageContainer.row {
+	margin: 0;
 }
 a {
 	color: black;

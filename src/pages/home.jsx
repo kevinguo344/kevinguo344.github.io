@@ -12,9 +12,8 @@ class Home extends Component {
 					<Row>
 						<Column width = "6">
 							<h1><strong>Hi, I'm Kevin</strong></h1>
-							<p>I'm currently a student Cornell University studying Information Science, Systems, & Technology. Next year, I will be pursuing a Masters of Engineering in Mechanical Engineering focusing on Architectural Robotics.</p>
-							<p>I'm interested in learning how technology can make design more accessible, useful, and exciting, especially interested in its applications to architecture.</p>
-							<h5><strong>I want to make the built environment responsive through technology.</strong></h5>
+							<p>I'm currently a student Cornell University studying Information Science, Systems, & Technology. I'm also pursuing a Masters of Engineering in Mechanical Engineering focusing on Architectural Robotics. My advisor is <a href="https://arl.human.cornell.edu/people_keith.htm">Prof. Keith Green</a> of the Design + Environmental Analysis (DEA) department.</p>
+							<p>I'm interested in learning how technology can make design more accessible, useful, and exciting, especially interested in its applications to architecture and the built environment.</p>
 						</Column>
 					</Row>
 				</Page>
@@ -22,8 +21,6 @@ class Home extends Component {
 					<MediaQuery minWidth={550}>
 						<Row>
 							<h1>Research Projects</h1>
-							<p>My research focuses on the applications of design in the rapid prototyping, augmented reality, and robotics with a special focus on human-computer interaction.</p>
-							<p>Much of the focus of human-computer interaction (HCI) right now is focused entirely on screens. However, computing is rapidly outgrowing the boundaries imposed by screens as augmented and virtual reality, 3D printing, and robotics become increasingly prevalent. In this realm, the rules that once dictated interfaces are inadequate for application in these messy physical realities and best practices and standards are yet to be defined. But it also a place of opportunity as the lack of boundaries make an exciting place for experimentation and innovation.</p>
 						</Row>
 						<Row>
 							<Tile project="crochetmatic" side="left"></Tile>
