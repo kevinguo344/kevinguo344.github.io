@@ -7,9 +7,9 @@
 *CrochetMatic in full*
 </span>
 
-I worked on CrochetMatic during my time at [Prof. François Guimbretière\'s Design Lab](https://www.cs.cornell.edu/~francois/). CrochetMatic was easily one of the most time-consuming and difficult projects. While I didn\'t reach the ultimate goal, I believe that I learned an immense amount from my struggles with this project.
+I worked on CrochetMatic during my time at [Prof. François Guimbretière](https://www.cs.cornell.edu/~francois/)\'s Design Lab. CrochetMatic was easily one of the most time-consuming and difficult projects. While I didn\'t reach the ultimate goal, I believe that I learned an immense amount from my struggles with this project.
 
-### In the Beginning...
+### The Start
 
 The initial idea was to build a machine that could build knitted objects the same way 3D printers build their prints: additive and layer-by-layer. But while plastic has relatively predictable properties and can be put through an extruder, a length of yarn\'s properties can change from bundle to bundle. Also, it can get caught on small mechanisms which makes it hard to build around. Furthermore, the idea of knitting 3D volumes, whether by hand or machine had never really been tried before. Through our research, the closest antecendent to our project was [a 3D knitting compiler](https://www.disneyresearch.com/publication/machine-knitting-compiler/) from Carnegie Mellon University. Even the knitting compiler only created knitted tubes that had to be filled afterwards.
 
@@ -57,7 +57,7 @@ Each knit followed a path of points, which I was able to export and joint togeth
 	</div>
 </div>
 
-Which were promising and seemed to match the real life knits I made.
+Which seemed to match the real life knits I made.
 
 <span style="display:block;text-align:center">
 <img src="./images/real_prism.jpg" alt="Label" width="50%" style="margin: 0 auto"/>
@@ -118,7 +118,5 @@ Because we were using off-the-shelf parts for the unusual task of creating knits
 <img src="./images/scarf.png" alt="Label" width="50%" style="margin: 0 auto"/>
 *Steps to create knots*
 </span>
-
-### So Much Testing
 
 ### The End
