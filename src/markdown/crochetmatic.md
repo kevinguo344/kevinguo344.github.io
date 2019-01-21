@@ -2,9 +2,15 @@
 ###### May 2017 - May 2018
 ##### People: **Kevin Guo**, Olav Imsdahl, François Guimbretière, Scott Hudson
 
+
 <span style="display:block;text-align:center">
-<img src="./images/crochetmatic.png" alt="That's me in that pic" width="75%" style="margin: 0 auto"/>
+<img src="./images/crochetmatic.png" alt="Crochetmatic" width="75%" style="margin: 0 auto"/>
 *CrochetMatic in full*
+</span>
+
+<span style="display:block;text-align:center">
+<img src="./images/full-view.svg" alt="That's me in that pic" width="75%" style="margin: 0 auto"/>
+*Technical Drawing*
 </span>
 
 I worked on CrochetMatic during my time at [Prof. François Guimbretière](https://www.cs.cornell.edu/~francois/)\'s Design Lab. CrochetMatic was easily one of the most time-consuming and difficult projects. While I didn\'t reach the ultimate goal, I believe that I learned an immense amount from my struggles with this project.
@@ -20,22 +26,20 @@ At the suggestion of [Prof. Steve Marschner](http://www.cs.cornell.edu/~srm/), t
 After spending the first two weeks of summer learning how to knit, I learned that the knits followed a regular pattern and that the best way to make a "layer" of knits was to spiral outwards in with a series of concentric layers. Each individual layer would be independent of the ones inside and outside of it except for "linking" knits that connected that layer to the one outside of it. I ended up building computer models in Fusion360 of each type of knit that would conform to the voxels.
 
 <div class="row">
-	<div class="four columns" style="display:block;text-align:center">
+	<div class="six columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/voxel.jpg" alt="Junction" width="100%" style="margin: 0 auto"/>
-		*Initial Sketches from Observation*
+		<img src="./images/voxel-single.jpg" alt="Basic" width="100%" style="margin: 0 auto"/>
+		*Initial observation sketch of a unit voxel*
+		<img src="./images/basic.png" alt="Basic" width="100%" style="margin: 0 auto"/>
+		*Final modeled basic knit voxel*
 		</span>
 	</div>
-	<div class="four columns" style="display:block;text-align:center">
+	<div class="six columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/basic.png" alt="Basic" width="75%" style="margin: 0 auto"/>
-		*A basic knit voxel*
-		</span>
-	</div>
-	<div class="four columns" style="display:block;text-align:center">
-		<span style="display:block;text-align:center">
+		<img src="./images/voxel-double.jpg" alt="Basic" width="100%" style="margin: 0 auto"/>
+		*Initial observation sketch of a junction voxel*
 		<img src="./images/junction.png" alt="Junction" width="100%" style="margin: 0 auto"/>
-		*Junction knit voxels*
+		*Final modeled junction knit voxels*
 		</span>
 	</div>
 </div>
@@ -107,12 +111,21 @@ The needles for our machine went through multiple iterations, with each version 
 
 The final needle version required minimal custom parts and instead relied upon off-the-shelf 0.125\" and 0.25\" diameter aluminum rods nested in one another. The hooks and pushers were 3D printed and manually fitted onto the pipes using force, glue, and rolled-up masking tape. The outer and inner components were each driven by rack-and-pinion mechanism with a motor module. Each module had an SG90 servo motor, which were not only small but also cheap, meaning that each needle could be driven by two motors. With 
 
+### Machine movement
+
+With all these pieces, perhaps the most difficult part of the project was programming the movement of the machine. In most other knitting machines which make knits in two dimensions, this is simpler as the yarn is relatively restricted in where it can go and any knot is pulled either on the left or the right. However, in three dimensions where a single knot can have tension coming from six different sides, it\'s incredibly difficult to accurately predict how the yarn will behave when something is done to it. There were multiple rounds of testing and frustratingly long nights in order to finally come up with the final sequence of events.
+
+After building a unit version of the needle, I
+
+<span style="display:block;text-align:center">
+<img src="./images/loop-by-hand.gif" alt="Label" width="75%" style="margin: 0 auto"/>
+*Looping by hand*
+</span>
+
 <span style="display:block;text-align:center">
 <img src="./images/steps.svg" alt="Label" width="100%" style="margin: 0 auto"/>
 *Steps to create a knit*
 </span>
-
-Because we were using off-the-shelf parts for the unusual task of creating knits, it required some hacking together. A
 
 <span style="display:block;text-align:center">
 <img src="./images/scarf.png" alt="Label" width="50%" style="margin: 0 auto"/>
