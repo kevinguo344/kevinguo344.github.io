@@ -20,7 +20,7 @@ class Home extends Component {
 				<Page>
 					<MediaQuery minWidth={550}>
 						<Row>
-							<h1>Research Projects</h1>
+							<h2><strong>Projects</strong></h2>
 							<p>My research focuses on the applications of design in the rapid prototyping, augmented reality, and robotics with a special focus on human-computer interaction.</p>
 						</Row>
 						<Row>

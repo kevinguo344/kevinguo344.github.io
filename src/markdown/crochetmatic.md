@@ -17,9 +17,9 @@ I worked on CrochetMatic during my time at [Prof. François Guimbretière](https
 
 ### The Start
 
-The initial idea was to build a machine that could build knitted objects the same way 3D printers build their prints: additive and layer-by-layer. But while plastic has relatively predictable properties and can be put through an extruder, a length of yarn\'s properties can change from bundle to bundle. Also, it can get caught on small mechanisms which makes it hard to build around. Furthermore, the idea of knitting 3D volumes, whether by hand or machine had never really been tried before. Through our research, the closest antecendent to our project was [a 3D knitting compiler](https://www.disneyresearch.com/publication/machine-knitting-compiler/) from Carnegie Mellon University. Even the knitting compiler only created knitted tubes that had to be filled afterwards.
+The initial idea was to build a machine that could build knitted objects the same way 3D printers build their prints: additive and layer-by-layer. But while plastic has relatively predictable properties and can be put through an extruder, a length of yarn\'s properties can change from bundle to bundle. Also, it can get caught on small mechanisms which makes it hard to build around. Furthermore, the idea of knitting entire 3D volumes (both the exterior and interior), whether by hand or machine had never really been tried before. The closest antecedent to the project was [a 3D knitting compiler](https://www.disneyresearch.com/publication/machine-knitting-compiler/) from Carnegie Mellon University but even that knitting compiler only created knitted tubes that had to be filled afterwards.
 
-At the suggestion of [Prof. Steve Marschner](http://www.cs.cornell.edu/~srm/), the preeminent computer graphics professor at Cornell (and probably the world, he won an Oscar for his CG research), the individual knits were throught of as a series of voxels, or volumes in a 3D grid. This was coming off of his previous work simulating knit clothes [(more details here.)](http://www.cs.cornell.edu/projects/YarnCloth/)
+At the suggestion of [Prof. Steve Marschner](http://www.cs.cornell.edu/~srm/), the preeminent computer graphics professor at Cornell (he won an Oscar for his CG research), the individual knits were throught of as a series of voxels, or volumes in a 3D grid. This was coming off of his previous work simulating knit clothes [(more details here.)](http://www.cs.cornell.edu/projects/YarnCloth/)
 
 ### Simulations
 
@@ -28,17 +28,21 @@ After spending the first two weeks of summer learning how to knit, I learned tha
 <div class="row">
 	<div class="six columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/voxel-single.jpg" alt="Basic" width="100%" style="margin: 0 auto"/>
+		<img src="./images/voxel-single.jpg" alt="Basic" width="75%" style="margin: 0 auto"/>
 		*Initial observation sketch of a unit voxel*
-		<img src="./images/basic.png" alt="Basic" width="100%" style="margin: 0 auto"/>
+		</span>
+		<span style="display:block;text-align:center">
+		<img src="./images/basic.png" alt="Basic" width="75%" style="margin: 0 auto"/>
 		*Final modeled basic knit voxel*
 		</span>
 	</div>
 	<div class="six columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/voxel-double.jpg" alt="Basic" width="100%" style="margin: 0 auto"/>
+		<img src="./images/voxel-double.jpg" alt="Basic" width="75%" style="margin: 0 auto"/>
 		*Initial observation sketch of a junction voxel*
-		<img src="./images/junction.png" alt="Junction" width="100%" style="margin: 0 auto"/>
+		</span>
+		<span style="display:block;text-align:center">
+		<img src="./images/junction.png" alt="Junction" width="75%" style="margin: 0 auto"/>
 		*Final modeled junction knit voxels*
 		</span>
 	</div>
@@ -79,7 +83,7 @@ With an idea of what the final knits would look like, it was onto building the m
 The XY bed was built and assembled by [Prof. Scott Hudson](https://hcii.cmu.edu/people/scott-hudson) from Carnegie Mellon University. Based off a regular 3D printer bed, it\'s made up of a (get measurements) 80-20 frame driven by an Arduino Mega with a RAMPS board mounted on it. The Arduino Mega controlled most of the movements on the machine with a RAMPS 1.4 board. The RAMPS board was typically meant for building DIY 3D printers, but because of CrochetMatic didn\'t have a heating element, I had to put two resistors and a potentiometer (a dial) attached to where the heat sensors were supposed to be. This was to trick the board into thinking that there is a heating element on the machine (there isn’t) so that it will use the extruder properly (how the latch servos and the yarn extruder are operated).
 
 ### Needle Array
-3D knitting (or Volumetric knitting) was untried while I was working on the project, and the most daunting part was figuring out how to build the needles. The idea was to build an entire "bed" of needles, but what they would look like and how they would work was completely unknown. We couldn\'t copy them from existing knitting machine needles, which are meant solely for flat 2D planes, but we could use some of the basics of the designs to base how the needles would work. The most helpful was [A Compiler for 3D Machine Knitting](https://www.disneyresearch.com/publication/machine-knitting-compiler/) made in Carnegie Mellon University, which described a way to make knitted 2D shells of 3D forms. The computer simulations provided created a starting point of understanding how to create each knit.
+3D knitting (or Volumetric knitting) was untried while I was working on the project, and the most daunting part was figuring out how to build the needles. The idea was to build an entire "bed" of needles, but what they would look like and how they would work was completely unknown. We couldn\'t copy them from existing knitting machine needles, which are meant solely for flat 2D planes, but we could use some of the basics of the designs to base how the needles would work. The most helpful was [A Compiler for 3D Machine Knitting](https://www.disneyresearch.com/publication/machine-knitting-compiler/) made in Carnegie Mellon University, which described a way to make knitted 2D shells of 3D forms. The computer simulations provided created a starting point of understanding how the knits would interact with each other.
 
 <span style="display:block;text-align:center">
 <img src="./images/computer_sim.gif" alt="single" width="70%" style="margin: 0 auto"/>
@@ -104,23 +108,27 @@ The needles for our machine went through multiple iterations, with each version 
 	<div class="four columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
 		<img src="./images/final_version.svg" alt="Basic" width="70%" style="margin: 0 auto"/>
-		*Final Version (partially cut off)*
+		*Final Version*
 		</span>
 	</div>
 </div>
 
-The final needle version required minimal custom parts and instead relied upon off-the-shelf 0.125\" and 0.25\" diameter aluminum rods nested in one another. The hooks and pushers were 3D printed and manually fitted onto the pipes using force, glue, and rolled-up masking tape. The outer and inner components were each driven by rack-and-pinion mechanism with a motor module. Each module had an SG90 servo motor, which were not only small but also cheap, meaning that each needle could be driven by two motors. With 
+The final needle version required minimal custom parts and instead relied upon off-the-shelf 0.125\" and 0.25\" diameter aluminum rods nested in one another. The hooks and pushers were 3D printed and manually fitted onto the pipes using force, glue, and rolled-up masking tape. The outer and inner components were each driven by rack-and-pinion mechanism with a motor module. Each module had an SG90 servo motor, which were not only small but also cheap, meaning that each needle could be driven by two motors.
 
-### Machine movement
+Each row would have in total 5 different needles, meaning that there would have to be a total of 10 servo motors driven 
 
-With all these pieces, perhaps the most difficult part of the project was programming the movement of the machine. In most other knitting machines which make knits in two dimensions, this is simpler as the yarn is relatively restricted in where it can go and any knot is pulled either on the left or the right. However, in three dimensions where a single knot can have tension coming from six different sides, it\'s incredibly difficult to accurately predict how the yarn will behave when something is done to it. There were multiple rounds of testing and frustratingly long nights in order to finally come up with the final sequence of events.
+### Making the Knits
 
-After building a unit version of the needle, I
+With all these pieces, perhaps the most difficult part of the project was programming the movement of the machine. In most other knitting machines which make knits in two dimensions, this is simpler as the yarn is relatively restricted in where it can go and any knot is pulled either on the left or the right. However, in three dimensions where a single knot can have tension coming from six different sides, it\'s incredibly difficult to accurately predict how the yarn will behave when something is done to it. 
+
+After building a unit version of the needle, I made a sequence of motions to create knits by hand and the actuated needle, which you can see below:
 
 <span style="display:block;text-align:center">
 <img src="./images/loop-by-hand.gif" alt="Label" width="75%" style="margin: 0 auto"/>
 *Looping by hand*
 </span>
+
+With this, I finally had an idea of how to to make knits with the needle. But translating it to machine movement was incredibly challenging. There were multiple rounds of endlessly testing minutely different sequences and frustratingly long nights in order to finally come up with the correct sequence that could reliably make the desired knots.
 
 <span style="display:block;text-align:center">
 <img src="./images/steps.svg" alt="Label" width="100%" style="margin: 0 auto"/>
@@ -129,7 +137,7 @@ After building a unit version of the needle, I
 
 <span style="display:block;text-align:center">
 <img src="./images/scarf.png" alt="Label" width="50%" style="margin: 0 auto"/>
-*Steps to create knots*
+*The result of a year of work: a scarf*
 </span>
 
 ### The End
