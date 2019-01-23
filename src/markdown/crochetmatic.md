@@ -74,13 +74,12 @@ Which seemed to match the real life knits I made.
 
 ### Building the Machine
 
-With an idea of what the final knits would look like, it was onto building the machine itself. This ended up being the most challenging part of the project. The machine was separated into 3 parts:
+With an idea of what the final knits would look like, it was onto building the machine itself, which was made up of two separate parts:
 1. An XY Bed powered by an Arduino Mega and RAMPS board
 2. An array of needles powered by a Teensy 3.5 board
-3. A yarn extruder
 
 ### XY Bed
-The XY bed was built and assembled by [Prof. Scott Hudson](https://hcii.cmu.edu/people/scott-hudson) from Carnegie Mellon University. Based off a regular 3D printer bed, it\'s made up of a (get measurements) 80-20 frame driven by an Arduino Mega with a RAMPS board mounted on it. The Arduino Mega controlled most of the movements on the machine with a RAMPS 1.4 board. The RAMPS board was typically meant for building DIY 3D printers, but because of CrochetMatic didn\'t have a heating element, I had to put two resistors and a potentiometer (a dial) attached to where the heat sensors were supposed to be. This was to trick the board into thinking that there is a heating element on the machine (there isn’t) so that it will use the extruder properly (how the latch servos and the yarn extruder are operated).
+The XY bed was built and assembled by [Prof. Scott Hudson](https://hcii.cmu.edu/people/scott-hudson) from Carnegie Mellon University. Based off a regular 3D printer bed, it\'s made up of a 80-20 frame driven by an Arduino Mega with a RAMPS board mounted on it. The Arduino Mega controlled most of the movements on the machine with a RAMPS 1.4 board. The RAMPS board was typically meant for building DIY 3D printers, but because of CrochetMatic didn\'t have a heating element, I had to put two resistors and a potentiometer (a dial) attached to where the heat sensors were supposed to be. This was to trick the board into thinking that there is a heating element on the machine (there isn’t) so that it will use the extruder properly (how the latch servos and the yarn extruder are operated).
 
 ### Needle Array
 3D knitting (or Volumetric knitting) was untried while I was working on the project, and the most daunting part was figuring out how to build the needles. The idea was to build an entire "bed" of needles, but what they would look like and how they would work was completely unknown. We couldn\'t copy them from existing knitting machine needles, which are meant solely for flat 2D planes, but we could use some of the basics of the designs to base how the needles would work. The most helpful was [A Compiler for 3D Machine Knitting](https://www.disneyresearch.com/publication/machine-knitting-compiler/) made in Carnegie Mellon University, which described a way to make knitted 2D shells of 3D forms. The computer simulations provided created a starting point of understanding how the knits would interact with each other.
@@ -115,7 +114,7 @@ The needles for our machine went through multiple iterations, with each version 
 
 The final needle version required minimal custom parts and instead relied upon off-the-shelf 0.125\" and 0.25\" diameter aluminum rods nested in one another. The hooks and pushers were 3D printed and manually fitted onto the pipes using force, glue, and rolled-up masking tape. The outer and inner components were each driven by rack-and-pinion mechanism with a motor module. Each module had an SG90 servo motor, which were not only small but also cheap, meaning that each needle could be driven by two motors.
 
-Each row would have in total 5 different needles, meaning that there would have to be a total of 10 servo motors driven 
+Each row would have in total 5 different needles, meaning that there would have to be a total of 10 servo motors driven. The end goal was to eventually have an entire series of these 5 needle rows to built.
 
 ### Making the Knits
 
@@ -128,12 +127,32 @@ After building a unit version of the needle, I made a sequence of motions to cre
 *Looping by hand*
 </span>
 
-With this, I finally had an idea of how to to make knits with the needle. But translating it to machine movement was incredibly challenging. There were multiple rounds of endlessly testing minutely different sequences and frustratingly long nights in order to finally come up with the correct sequence that could reliably make the desired knots.
+These motions were turned into the 4 separate steps you see below, which formed the basis of the ultimate sequence for creating knits.
 
 <span style="display:block;text-align:center">
 <img src="./images/steps.svg" alt="Label" width="100%" style="margin: 0 auto"/>
 *Steps to create a knit*
 </span>
+
+However, translating the steps to machine movement was incredibly challenging. Because the XY bed was built using off-the-shelf components meant for 3D printers, the code driving the machine was built off of [Repetier](https://www.repetier.com/), an existing Arduino-based firmware. That meant that the machine could be moved through gcode, the language used for most existing 3D printers and CNC machines. However, there needed to be a couple modifications to make the firmware work with the motion.
+
+| Command | Original Definition | Modified Definition | Usage |
+|-------------| ------------- | ------------- | ------------- |
+|`L`| No `L` defined in Repetier | Selects a needle to be actuated | `L<index of desired needle>` |
+|`E`| Length of material to be extruded | Distance that the pusher moves (in mm) | `E<desired distance>` |
+|`Z`| Distance a 3D printer bed goes in Z-direction | Distance the hook moves (in mm) | `Z<desired distance>` |
+|`F`| Feed rate for extruder | Speed at which the machine moved | `F<desired speed>` |
+
+There were multiple rounds of endlessly testing minutely different sequences and frustratingly long nights in order to finally come up the set of coordinates 
+
+with the correct sequence that could reliably make the desired knots. There were also problems ensuring that the servos, which were chosen for their inexpensive price rather than precision, could perform the same exact motion from needle to needle. 
+
+<span style="display:block;text-align:center">
+<img src="./images/motion_test.gif" alt="Label" width="75%" style="margin: 0 auto"/>
+*An early version of the five needle row. Even though the needles are programmed to move identically, the results are less precise.*
+</span>
+
+The solution was to exaggerate the movements of the needle to ensure that each motion would complete its 
 
 <span style="display:block;text-align:center">
 <img src="./images/scarf.png" alt="Label" width="50%" style="margin: 0 auto"/>

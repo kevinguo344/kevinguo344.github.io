@@ -15,6 +15,9 @@ h1 strong{
 h2 strong{
 	color: #084C61;
 }
+th, td {
+	padding: 0.5em;
+}
 p{
 	font-family: proxima-nova, sans-serif;
 	font-weight: 400;
