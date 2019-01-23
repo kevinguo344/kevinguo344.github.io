@@ -148,7 +148,6 @@ There were multiple rounds of endlessly testing minutely different sequences and
 with the correct sequence that could reliably make the desired knots. There were also problems ensuring that the servos, which were chosen for their inexpensive price rather than precision, could perform the same exact motion from needle to needle. 
 
 <span style="display:block;text-align:center">
-<img src="./images/motion_test.gif" alt="Label" width="75%" style="margin: 0 auto"/>
 *An early version of the five needle row. Even though the needles are programmed to move identically, the results are less precise.*
 </span>
 
