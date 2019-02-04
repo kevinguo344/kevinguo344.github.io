@@ -170,6 +170,6 @@ With the toolpaths set, I could output a G-code file from Fusion360, which after
 *The result of a year of work: a scarf*
 </span>
 
-To get to this point required months of work, experimentation and false starts and for CrochetMatic to fully achieve the initial vision of fully volumetric 3D-knitting will require more work. Fortunately, it\'s currently in the competent hands of [Xiaoxiang Ma](https://medium.com/@xiaoxiangma), Alicia Wang, and [Amrit Kwatra](http://amritkwatra.com/).
+To get to this point required months of work, experimentation and false starts and for CrochetMatic to fully achieve the initial vision of fully volumetric 3D-knitting will require more work. Fortunately, it\'s currently in the competent hands of [Xiaoxiang Ma](https://medium.com/@xiaoxiangma), [Alicia Wang](https://github.com/aliciaxw), and [Amrit Kwatra](http://amritkwatra.com/).
 
 ### The End
