@@ -143,6 +143,8 @@ However, translating the steps to machine movement was incredibly challenging. B
 |`Z`| Distance a 3D printer bed goes in Z-direction | Distance the hook moves (in mm) | `Z<desired distance>` |
 |`F`| Feed rate for extruder | Speed at which the machine moved | `F<desired speed>` |
 
+Each custom command was added to the Repetier firmware and modifying the 
+
 There were multiple rounds of endlessly testing minutely different sequences and frustratingly long nights in order to finally come up the set of coordinates 
 
 with the correct sequence that could reliably make the desired knots. There were also problems ensuring that the servos, which were chosen for their inexpensive price rather than precision, could perform the same exact motion from needle to needle. 
@@ -151,7 +153,7 @@ with the correct sequence that could reliably make the desired knots. There were
 *An early version of the five needle row. Even though the needles are programmed to move identically, the results are less precise.*
 </span>
 
-The solution was to exaggerate the movements of the needle to ensure that each motion would complete its 
+The solution was to exaggerate the movements of the needle to ensure that each motion would have the desired effect on the knits. After some 
 
 <span style="display:block;text-align:center">
 <img src="./images/scarf.png" alt="Label" width="50%" style="margin: 0 auto"/>
