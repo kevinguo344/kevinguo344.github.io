@@ -2,7 +2,6 @@
 ###### May 2017 - May 2018
 ##### People: **Kevin Guo**, Olav Imsdahl, François Guimbretière, Scott Hudson
 
-
 <span style="display:block;text-align:center">
 <img src="./images/crochetmatic.png" alt="Crochetmatic" width="75%" style="margin: 0 auto"/>
 *CrochetMatic in full*
@@ -143,19 +142,34 @@ However, translating the steps to machine movement was incredibly challenging. B
 |`Z`| Distance a 3D printer bed goes in Z-direction | Distance the hook moves (in mm) | `Z<desired distance>` |
 |`F`| Feed rate for extruder | Speed at which the machine moved | `F<desired speed>` |
 
-There were multiple rounds of endlessly testing minutely different sequences and frustratingly long nights in order to finally come up the set of coordinates 
+Each new command was added or edited in the Commands.cpp file of the Repetier firmware. A Github repo with the modified firmware along with all sorts of other related code can be found [here](https://github.com/kevinguo344/CrochetMatic).
 
-with the correct sequence that could reliably make the desired knots. There were also problems ensuring that the servos, which were chosen for their inexpensive price rather than precision, could perform the same exact motion from needle to needle. 
+There were also problems ensuring that the servos, which were chosen for their inexpensive price rather than precision, could perform the repicate the exact motion from needle to needle reliably. The solution was to exaggerate the movements of the needle to ensure that each motion would complete its requisite task.
 
 <span style="display:block;text-align:center">
-*An early version of the five needle row. Even though the needles are programmed to move identically, the results are less precise.*
+<img src="./images/row.gif" alt="Label" width="75%" style="margin: 0 auto"/>
+*An early version of the five needle row. Even though the needles are programmed to move identically, the actual movements are far from identical.*
 </span>
 
-The solution was to exaggerate the movements of the needle to ensure that each motion would complete its 
+In order to plan for how the needle would move, I used the CAM function built into Fusion360 with the simulated CAM tool as a stand-in for the needle, a fixed tube as analog for where the yarn was extruded from, and 2 tilted boxes representing the pushing brushes. 
+
+<span style="display:block;text-align:center">
+<img src="./images/CAM-trace.gif" alt="Label" width="75%" style="margin: 0 auto"/>
+*Simulating needle movement in Fusion360*
+</span>
+
+With the toolpaths set, I could output a G-code file from Fusion360, which after further editing and modification, worked with the machine. And all the changes paid off when at the end of May 2018, I was able to make the machine knit a 5-needle wide scarf (almost) entirely without human intervention.
+
+<span style="display:block;text-align:center">
+<iframe src="https://drive.google.com/file/d/1NX24JxTp0RCihOpacNhDnv6LlEIOh0n9/preview" width="640" height="480"></iframe>
+*Knitting Machine finally working*
+</span>
 
 <span style="display:block;text-align:center">
 <img src="./images/scarf.png" alt="Label" width="50%" style="margin: 0 auto"/>
 *The result of a year of work: a scarf*
 </span>
+
+To get to this point required months of work, experimentation and false starts and for CrochetMatic to fully achieve the initial vision of fully volumetric 3D-knitting will require more work. Fortunately, it\'s currently in the competent hands of [Xiaoxiang Ma](https://medium.com/@xiaoxiangma), Alicia Wang, and [Amrit Kwatra](http://amritkwatra.com/).
 
 ### The End
