@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "6c3dfa0da1a9a9f62e999389f9bbc994",
-    "url": "/kevinguo344.github.io/static/media/voxel-single.6c3dfa0d.jpg"
+    "revision": "83933b43a150f4c5ef6fae9b14dede83",
+    "url": "/kevinguo344.github.io/static/media/basic.83933b43.png"
   },
   {
-    "revision": "a34bb3a8ac37cac041c8",
+    "revision": "2219886de719eb97748b",
     "url": "/kevinguo344.github.io/static/css/main.bd9ea3be.chunk.css"
   },
   {
-    "revision": "1e881896fe4dfde441ab",
-    "url": "/kevinguo344.github.io/static/js/1.1e881896.chunk.js"
+    "revision": "46de4c209f4a71ca9175",
+    "url": "/kevinguo344.github.io/static/js/1.46de4c20.chunk.js"
   },
   {
     "revision": "51c934400794d57ff229",
@@ -68,12 +68,12 @@ self.__precacheManifest = [
     "url": "/kevinguo344.github.io/static/media/full-view.76784da0.svg"
   },
   {
-    "revision": "a34bb3a8ac37cac041c8",
-    "url": "/kevinguo344.github.io/static/js/main.a34bb3a8.chunk.js"
+    "revision": "6c3dfa0da1a9a9f62e999389f9bbc994",
+    "url": "/kevinguo344.github.io/static/media/voxel-single.6c3dfa0d.jpg"
   },
   {
-    "revision": "83933b43a150f4c5ef6fae9b14dede83",
-    "url": "/kevinguo344.github.io/static/media/basic.83933b43.png"
+    "revision": "2219886de719eb97748b",
+    "url": "/kevinguo344.github.io/static/js/main.2219886d.chunk.js"
   },
   {
     "revision": "4f8888e8bdde5562860e76a8cf891866",
@@ -96,6 +96,10 @@ self.__precacheManifest = [
     "url": "/kevinguo344.github.io/static/media/real_prism.4c16cf18.jpg"
   },
   {
+    "revision": "bc6eefb7a1e13ca6eb9ffedc3a1c09fe",
+    "url": "/kevinguo344.github.io/static/media/part-overview.bc6eefb7.svg"
+  },
+  {
     "revision": "2cf7d002a8d22ec7d4c834941a1c87a4",
     "url": "/kevinguo344.github.io/static/media/computer_sim.2cf7d002.gif"
   },
@@ -110,6 +114,10 @@ self.__precacheManifest = [
   {
     "revision": "5c8de141e665b046883dc36a5923b9f4",
     "url": "/kevinguo344.github.io/static/media/final_version.5c8de141.svg"
+  },
+  {
+    "revision": "bbc1f3b6490ced6c7edc9b8664fe1bee",
+    "url": "/kevinguo344.github.io/static/media/needle-parts.bbc1f3b6.svg"
   },
   {
     "revision": "c2db0d235095ea7faeecc6684ba6e45b",
@@ -136,7 +144,7 @@ self.__precacheManifest = [
     "url": "/kevinguo344.github.io/static/media/transFORM.4b2b2d68.jpg"
   },
   {
-    "revision": "7a277437477c36e9d7caf8f64c4161e6",
+    "revision": "e7032631471b034d58349e81610e7de7",
     "url": "/kevinguo344.github.io/index.html"
   }
 ];
