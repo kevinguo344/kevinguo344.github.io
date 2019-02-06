@@ -2,15 +2,14 @@
 ###### May 2017 - May 2018
 ##### People: **Kevin Guo**, Olav Imsdahl, François Guimbretière, Scott Hudson
 
-<span style="display:block;text-align:center">
-<img src="./images/crochetmatic.png" alt="Crochetmatic" width="75%" style="margin: 0 auto"/>
-*CrochetMatic in full*
-</span>
-
-<span style="display:block;text-align:center">
-<img src="./images/full-view.svg" alt="That's me in that pic" width="75%" style="margin: 0 auto"/>
-*Technical Drawing*
-</span>
+<div class="row">
+	<div class="six columns" style="display:block;text-align:center">
+		<img src="./images/crochetmatic.png" alt="Crochetmatic" width="100%" style="margin: 0 auto"/>
+	</div>
+	<div class="six columns" style="display:block;text-align:center">
+		<img src="./images/full-view.svg" alt="That's me in that pic" width="100%" style="margin: 0 auto"/>
+	</div>
+</div>
 
 I worked on CrochetMatic during my time at [Prof. François Guimbretière](https://www.cs.cornell.edu/~francois/)\'s Design Lab. CrochetMatic was easily one of the most time-consuming and difficult projects. While I didn\'t reach the ultimate goal, I believe that I learned an immense amount from my struggles with this project.
 
@@ -77,6 +76,10 @@ With an idea of what the final knits would look like, it was onto building the m
 1. An XY Bed powered by an Arduino Mega and RAMPS board
 2. An array of needles powered by a Teensy 3.5 board
 
+<span style="display:block;text-align:center">
+<img src="./images/part-overview.svg" alt="Label" width="75%" style="margin: 0 auto"/>
+</span>
+
 ### XY Bed
 The XY bed was built and assembled by [Prof. Scott Hudson](https://hcii.cmu.edu/people/scott-hudson) from Carnegie Mellon University. Based off a regular 3D printer bed, it\'s made up of a 80-20 frame driven by an Arduino Mega with a RAMPS board mounted on it. The Arduino Mega controlled most of the movements on the machine with a RAMPS 1.4 board. The RAMPS board was typically meant for building DIY 3D printers, but because of CrochetMatic didn\'t have a heating element, I had to put two resistors and a potentiometer (a dial) attached to where the heat sensors were supposed to be. This was to trick the board into thinking that there is a heating element on the machine (there isn’t) so that it will use the extruder properly (how the latch servos and the yarn extruder are operated).
 
@@ -114,6 +117,10 @@ The needles for our machine went through multiple iterations, with each version 
 The final needle version required minimal custom parts and instead relied upon off-the-shelf 0.125\" and 0.25\" diameter aluminum rods nested in one another. The hooks and pushers were 3D printed and manually fitted onto the pipes using force, glue, and rolled-up masking tape. The outer and inner components were each driven by rack-and-pinion mechanism with a motor module. Each module had an SG90 servo motor, which were not only small but also cheap, meaning that each needle could be driven by two motors.
 
 Each row would have in total 5 different needles, meaning that there would have to be a total of 10 servo motors driven. The end goal was to eventually have an entire series of these 5 needle rows to built.
+
+<span style="display:block;text-align:center">
+<img src="./images/needle-parts.svg" alt="Label" width="75%" style="margin: 0 auto"/>
+</span>
 
 ### Making the Knits
 
