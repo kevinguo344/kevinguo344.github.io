@@ -28,8 +28,8 @@ class Home extends Component {
 							<Tile project="roma" side="left"></Tile>
 						</Row>
 						<Row>
-							<Tile project="distopia" side="right"></Tile>
 							<Tile project="transform" side="right"></Tile>
+							<Tile project="polybrick" side="right"></Tile>
 						</Row>
 					</MediaQuery>
 					<MediaQuery maxWidth={550}>
@@ -41,8 +41,8 @@ class Home extends Component {
 							<Tile project="roma" side="left"></Tile>
 						</Row>
 						<Row>
-							<Tile project="distopia" side="right"></Tile>
-							<Tile project="transform" side="left"></Tile>
+							<Tile project="transform" side="right"></Tile>
+							<Tile project="polybrick" side="left"></Tile>
 						</Row>
 					</MediaQuery>
 				</Page>
