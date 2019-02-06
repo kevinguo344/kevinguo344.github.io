@@ -20,8 +20,8 @@ class Home extends Component {
 				<Page>
 					<MediaQuery minWidth={550}>
 						<Row>
-							<h2><strong>Projects</strong></h2>
-							<p>My research focuses on the applications of design in the rapid prototyping, augmented reality, and robotics with a special focus on human-computer interaction.</p>
+							<h2><strong>Research</strong></h2>
+							<p>My research focuses on the applications of robotics in design, especially in architecture. Of special interest are the design and construction of interactive robotic environments and novel forms of robotic fabrication.</p>
 						</Row>
 						<Row>
 							<Tile project="crochetmatic" side="left"></Tile>
@@ -34,7 +34,8 @@ class Home extends Component {
 					</MediaQuery>
 					<MediaQuery maxWidth={550}>
 						<Row>
-							<h1>Research Projects</h1>
+							<h1>Research</h1>
+							<p>My research focuses on the applications of robotics in design, especially in architecture. Of special interest are the design and construction of interactive robotic environments and novel forms of robotic fabrication.</p>
 						</Row>
 						<Row>
 							<Tile project="crochetmatic" side="right"></Tile>
