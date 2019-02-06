@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/kevinguo344.github.io/static/media/voxel-single.6c3dfa0d.jpg"
   },
   {
-    "revision": "a423e0c59d254f403061",
-    "url": "/kevinguo344.github.io/static/css/main.39b3f2e3.chunk.css"
+    "revision": "0e57b1ef42bac282b8d6",
+    "url": "/kevinguo344.github.io/static/css/main.bd9ea3be.chunk.css"
   },
   {
     "revision": "4a9ef3f9eed3a338ee08",
@@ -68,8 +68,8 @@ self.__precacheManifest = [
     "url": "/kevinguo344.github.io/static/media/full-view.76784da0.svg"
   },
   {
-    "revision": "a423e0c59d254f403061",
-    "url": "/kevinguo344.github.io/static/js/main.a423e0c5.chunk.js"
+    "revision": "0e57b1ef42bac282b8d6",
+    "url": "/kevinguo344.github.io/static/js/main.0e57b1ef.chunk.js"
   },
   {
     "revision": "83933b43a150f4c5ef6fae9b14dede83",
@@ -136,7 +136,7 @@ self.__precacheManifest = [
     "url": "/kevinguo344.github.io/static/media/transFORM.4b2b2d68.jpg"
   },
   {
-    "revision": "00624cd2b7420d1de67c8f6b347e7fe3",
+    "revision": "0f47d76e1d01cb5888e0f9329294388e",
     "url": "/kevinguo344.github.io/index.html"
   }
 ];
