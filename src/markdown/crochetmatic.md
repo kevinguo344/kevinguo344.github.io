@@ -166,15 +166,15 @@ In order to plan for how the needle would move, I used the CAM function built in
 
 With the toolpaths set, I could output a G-code file from Fusion360, which after further editing and modification, worked with the machine. And all the changes paid off when at the end of May 2018, I was able to make the machine knit a 5-needle wide scarf (almost) entirely without human intervention.
 
-<span style="display:block;text-align:center">
-<iframe src="https://drive.google.com/file/d/1NX24JxTp0RCihOpacNhDnv6LlEIOh0n9/preview" width="640" height="480"></iframe>
-*Knitting Machine finally working*
-</span>
-
-<span style="display:block;text-align:center">
-<img src="./images/scarf.png" alt="Label" width="50%" style="margin: 0 auto"/>
+<div class="row">
+	<div class="seven columns" style="position:relative;overflow:hidden;padding-top: 56.25%;display:block;text-align:center">
+		<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border: 0;" src="https://drive.google.com/file/d/1NX24JxTp0RCihOpacNhDnv6LlEIOh0n9/preview"></iframe>
+	</div>
+	<div class="five columns" style="display:block;text-align:center">
+	<img src="./images/scarf.png" alt="Label" width="100%" style="margin: 0 auto"/>
 *The result of a year of work: a scarf*
-</span>
+	</div>
+</div>
 
 To get to this point required months of work, experimentation and false starts and for CrochetMatic to fully achieve the initial vision of fully volumetric 3D-knitting will require more work. Fortunately, it\'s currently in the competent hands of [Xiaoxiang Ma](http://www.xiaoxiangma.ml/), [Alicia Wang](https://github.com/aliciaxw), and [Amrit Kwatra](http://amritkwatra.com/).
 
