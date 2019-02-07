@@ -46,29 +46,28 @@ After spending the first two weeks of summer learning how to knit, I learned tha
 	</div>
 </div>
 
-Each knit followed a path of points, which I was able to export and joint together to form a single "strand" of points. This strand was inputted into a modified version of a [C++ rod simulator](https://www.cs.cornell.edu/projects/rodsound/) developed by one of Prof. Marschner\'s PhDs [Eston](https://www.cs.cornell.edu/~ers/). Each simulation, even though only one second long, required hours of computation, a couple took over 24 hours. But in the end, we got the results: 
+Each knit followed a path of points, which I was able to export and joint together to form a single "strand" of points. This strand was inputted into a modified version of a [C++ rod simulator](https://www.cs.cornell.edu/projects/rodsound/) developed by one of Prof. Marschner\'s PhDs [Eston](https://www.cs.cornell.edu/~ers/). Each simulation, even though only one second long, required hours of computation, a couple took over 24 hours. But in the end, we got the results, which seemed to match the real life knits I made.
 
 <div class="row">
-	<div class="six columns" style="display:block;text-align:center">
+	<div class="four columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
 		<img src="./images/single_layer.gif" alt="single" width="100%" style="margin: 0 auto"/>
 		*Simulating a single layer*
 		</span>
 	</div>
-	<div class="six columns" style="display:block;text-align:center">
+	<div class="four columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
 		<img src="./images/multiple_layers.gif" alt="multiple" width="100%" style="margin: 0 auto"/>
 		*Simulating  multiple layers*
 		</span>
 	</div>
+	<div class="four columns" style="display:block;text-align:center">
+		<span style="display:block;text-align:center">
+		<img src="./images/real_prism.jpg" alt="Label" width="100%" style="margin: 0 auto"/>
+		*Knitted "Cube" I made*
+		</span>
+	</div>
 </div>
-
-Which seemed to match the real life knits I made.
-
-<span style="display:block;text-align:center">
-<img src="./images/real_prism.jpg" alt="Label" width="50%" style="margin: 0 auto"/>
-*Knitted "Cube" I made*
-</span>
 
 ### Building the Machine
 
