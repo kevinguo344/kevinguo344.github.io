@@ -47,6 +47,40 @@ class Home extends Component {
 						</Row>
 					</MediaQuery>
 				</Page>
+				<Page>
+					<MediaQuery minWidth={550}>
+						<Row>
+							<h2><strong>Design Projects</strong></h2>
+						</Row>
+						<Row>
+							<Tile project="cuberpillar" side="left"></Tile>
+							<Tile project="ocularmd" side="left"></Tile>
+						</Row>
+						<Row>
+							<Tile project="ciac" side="right"></Tile>
+							<Tile project="lcl" side="right"></Tile>
+						</Row>
+						<Row>
+							<Tile project="cornellems" side="left"></Tile>
+						</Row>
+					</MediaQuery>
+					<MediaQuery maxWidth={550}>
+						<Row>
+							<h2><strong>Design Projects</strong></h2>
+						</Row>
+						<Row>
+							<Tile project="cuberpillar" side="left"></Tile>
+							<Tile project="ocularmd" side="right"></Tile>
+						</Row>
+						<Row>
+							<Tile project="ciac" side="left"></Tile>
+							<Tile project="lcl" side="right"></Tile>
+						</Row>
+						<Row>
+							<Tile project="cornellems" side="left"></Tile>
+						</Row>
+					</MediaQuery>
+				</Page>
 			</Container>
 		);
 	}
