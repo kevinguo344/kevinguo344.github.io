@@ -167,8 +167,8 @@ In order to plan for how the needle would move, I used the CAM function built in
 With the toolpaths set, I could output a G-code file from Fusion360, which after further editing and modification, worked with the machine. And all the changes paid off when at the end of May 2018, I was able to make the machine knit a 5-needle wide scarf (almost) entirely without human intervention.
 
 <div class="row">
-	<div class="seven columns" style="position:relative;overflow:hidden;padding-top: 56.25%;display:block;text-align:center">
-		<iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border: 0;" src="https://drive.google.com/file/d/1NX24JxTp0RCihOpacNhDnv6LlEIOh0n9/preview"></iframe>
+	<div class="seven columns video-responsive">
+		<iframe width="560" height="315" src="https://drive.google.com/file/d/1NX24JxTp0RCihOpacNhDnv6LlEIOh0n9/preview"></iframe>
 	</div>
 	<div class="five columns" style="display:block;text-align:center">
 	<img src="./images/scarf.png" alt="Label" width="100%" style="margin: 0 auto"/>
