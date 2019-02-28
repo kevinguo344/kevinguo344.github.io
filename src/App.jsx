@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Home from './pages/home.jsx';
 import {RoMA, CrochetMatic, Distopia, TransForm, Polybrick} from './pages/research.jsx';
 import {Cuberpillar, OcularMD, CIAC, LCL, CUEMS} from './pages/designs.jsx';
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import { HashRouter as Router, Route} from 'react-router-dom'
 
 
 class App extends Component {
@@ -20,12 +20,11 @@ class App extends Component {
 					<Route exact path="/designs/ocularmd" component={OcularMD}></Route>
 					<Route exact path="/designs/ciac" component={CIAC}></Route>
 					<Route exact path="/designs/lcl" component={LCL}></Route>
-					<Route exact path="/designs/cuems" component={CUEMS}></Route>
+					<Route exact path="/designs/cornellems" component={CUEMS}></Route>
 				</div>
 			</Router>
 		);
 	}
 }
-//Markdown example from https://github.com/rahrang/react-markdown-example
 
 export default App;
