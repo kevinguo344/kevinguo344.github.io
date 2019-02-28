@@ -52,4 +52,4 @@ Given that the box was meant to resemble a creature, one that acted entirely by 
 
 These reactions to the box, even though it wasn\'t meant to be "interactive" the way an app or website does, has made me think about the possibilities of robotics in art. Perhaps, a robot, more than being a simple tool, could be used to evoke questions about our nature and our inherent humanity. This I\'d like to explore further.
 
-If you\'re interested in the more technical details about the project, checkout this documentation.
+If you\'re interested in the more technical details about the project, checkout the documentation I submitted for the assigmnent [here](https://drive.google.com/file/d/19Vr0eK3bR2Fvb-IcK58ZRGgLr12up9rf/view?usp=sharing).

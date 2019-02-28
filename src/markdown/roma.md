@@ -8,7 +8,7 @@
 
 ##### Authors: Huaishu Peng, Jimmy Briggs, Cheng-Yao Wang, **Kevin Guo**, Joseph Kider, Stefanie Mueller, Patrick Baudisch, François Guimbretière
 ##### 2018 Conference on Human Factors in Computing Systems **(CHI 2018)** 
-[Read the Paper here](http://www.huaishu.me/projects/roma.pdf)
+[Read the Paper here](https://drive.google.com/file/d/1dfZdkDhoW0ewAtWpj-f13B29UcXLNtwD/view?usp=sharing)
 
 <span style="display:block;text-align:center">
 <iframe width="720" height="405" src="https://www.youtube.com/embed/K_wWuYD1Fkg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
