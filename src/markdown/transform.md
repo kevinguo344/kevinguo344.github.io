@@ -1,5 +1,5 @@
 ### transFORM
-###### January 2019 - Onwards
+###### January 2019 - Present
 
 <span style="display:block;text-align:center">
 <img src="./images/transFORM.jpg" alt="That's me in that pic" width="75%" style="margin: 0 auto"/>

@@ -1,5 +1,5 @@
 ### Polybrick
-###### February 2019 - Onwards
+###### February 2019 - Present
 
 For Spring 2019, I am taking [Prof. Jenny Sabin\'s](http://www.jennysabin.com/) research seminar in Matter Design Computation. As part of the seminar, I will be working on the next version of Polybrick, a project in Prof. Sabin\'s lab. 
 
