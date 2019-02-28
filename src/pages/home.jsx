@@ -20,9 +20,9 @@ class Home extends Component {
 							<p>I'm interested in learning how technology can make design more accessible, useful, and exciting, especially in its applications to architecture and the built environment.</p>
 						</Column>
 						<Column width = "4">
-							<p><a href="https://www.linkedin.com/in/kevinlguo/">LinkedIn</a></p>
-							<p><a href="https://drive.google.com/file/d/1A6l2PUh6bY0s7zW-LWEin3AzVglI4o_I/view?usp=sharing">Resume</a></p>
-							<p>Email: kg344[at]cornell.edu</p>
+							<h5><a href="https://www.linkedin.com/in/kevinlguo/">LinkedIn</a></h5>
+							<h5><a href="https://drive.google.com/file/d/1A6l2PUh6bY0s7zW-LWEin3AzVglI4o_I/view?usp=sharing">Resume</a></h5>
+							<h5>Email: kg344[at]cornell.edu</h5>
 						</Column>
 					</Row>
 				</Page>

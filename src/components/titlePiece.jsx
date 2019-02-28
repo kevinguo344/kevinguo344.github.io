@@ -9,7 +9,7 @@ export class Tile extends React.Component{
 		this.project = projects[this.props.project];
 		this.side = this.props.side;
 		this.style = {
-			background: "linear-gradient(to bottom," + this.project.color + "," + this.project.color + "), linear-gradient(to bottom, rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url(" + this.project.img + ")",
+			background: "linear-gradient(to bottom," + this.project.color + "," + this.project.color + "), linear-gradient(to bottom, rgba(255,255,255,0.45),rgba(255,255,255,0.45)), url(" + this.project.img + ")",
 			backgroundSize: "cover"
 		}
 	}
@@ -70,31 +70,36 @@ let projects = {
 		title: "Cuberpillar",
 		sub: "Combining the geometric and organic",
 		link: "designs/cuberpillar",
-		img: "./assets/icons/transform.svg"
+		img: "./assets/icons/cuberpillar.gif",
+		color: "rgba(255,255,255,0)"
 	},
 	ocularmd: {
 		title: "OcularMD",
 		sub: "Letting the world see again",
 		link: "designs/ocularmd",
-		img: "./assets/icons/roma.png"
+		img: "./assets/icons/ocularmd_icon.png",
+		color: "rgba(255,255,255,0)"
 	},
 	ciac: {
 		title: "CIAC VII",
 		sub: "Bringing order to a messy brand",
 		link: "designs/ciac",
-		img: "./assets/icons/roma.png"
+		img: "./assets/icons/ciac_icon.png",
+		color: "rgba(255,255,255,0)"
 	},
 	lcl: {
 		title: "Life Changing Labs",
 		sub: "Giving startups a new beginning",
 		link: "designs/lcl",
-		img: "./assets/icons/roma.png"
+		img: "./assets/icons/lcl_icon.png",
+		color: "rgba(255,255,255,0)"
 	},
 	cornellems: {
 		title: "Cornell EMS",
 		sub: "Redefining an old stalwart",
 		link: "designs/cornellems",
-		img: "./assets/icons/roma.png"
+		img: "./assets/icons/roma.png",
+		color: "rgba(255,255,255,0)"
 	}
 }
 
