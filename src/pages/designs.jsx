@@ -6,7 +6,7 @@ const cuberpillar = require('../markdown/cuberpillar.md');
 const ocularmd = require('../markdown/ocularmd.md');
 const ciac = require('../markdown/ciac.md');
 const lcl = require('../markdown/lcl.md');
-const cuems = require('../markdown/cornellems.md');
+const cuems = require('../markdown/cuems.md');
 
 export const Cuberpillar = () => ( <Project><Markdown>{cuberpillar}</Markdown></Project> )
 export const OcularMD  = () => ( <Project><Markdown>{ocularmd}</Markdown></Project> )

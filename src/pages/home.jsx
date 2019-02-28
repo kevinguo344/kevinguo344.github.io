@@ -60,9 +60,6 @@ class Home extends Component {
 							<Tile project="ciac" side="right"></Tile>
 							<Tile project="lcl" side="right"></Tile>
 						</Row>
-						<Row>
-							<Tile project="cornellems" side="left"></Tile>
-						</Row>
 					</MediaQuery>
 					<MediaQuery maxWidth={550}>
 						<Row>
@@ -75,9 +72,6 @@ class Home extends Component {
 						<Row>
 							<Tile project="ciac" side="left"></Tile>
 							<Tile project="lcl" side="right"></Tile>
-						</Row>
-						<Row>
-							<Tile project="cornellems" side="left"></Tile>
 						</Row>
 					</MediaQuery>
 				</Page>

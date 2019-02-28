@@ -70,7 +70,7 @@ let projects = {
 		title: "Cuberpillar",
 		sub: "Combining the geometric and organic",
 		link: "designs/cuberpillar",
-		img: "./assets/icons/roma.png"
+		img: "./assets/icons/transform.svg"
 	},
 	ocularmd: {
 		title: "OcularMD",
