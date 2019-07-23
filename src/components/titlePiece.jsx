@@ -59,10 +59,10 @@ let projects = {
 		img: "./assets/icons/transform.svg",
 		color: "rgba(227,181,5,0.5)"
 	},
-	polybrick: {
-		title: "Polybrick",
+	cera: {
+		title: "CERA",
 		sub: "Building blocks inspired by Nature",
-		link: "research/polybrick",
+		link: "research/cera",
 		img: "./assets/icons/polybrick.svg",
 		color: "rgba(138,201,38,0.5)"
 	},
