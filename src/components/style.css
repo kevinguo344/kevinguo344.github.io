@@ -24,7 +24,8 @@ p{
 	font-style: normal;
 }
 .pageView{
-	min-height: 100vh;
+	height: 100vh;
+	max-height: 636px;
 	width: 100%;
 	display: flex;
 	align-items: center;

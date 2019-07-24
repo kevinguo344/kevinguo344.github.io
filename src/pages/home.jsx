@@ -25,6 +25,8 @@ class Home extends Component {
 							<h5>Email: kg344[at]cornell.edu</h5>
 						</Column>
 					</Row>
+				</Page>
+				<Page>
 					<MediaQuery minWidth={550}>
 						<Row>
 							<h2><strong>Projects</strong></h2>
