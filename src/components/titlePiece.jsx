@@ -52,10 +52,10 @@ let projects = {
 		img: "./assets/icons/distopia.svg",
 		color: "rgba(138,201,38,0.5)"
 	},
-	transform: {
-		title: "transFORM",
+	communit: {
+		title: "communIT",
 		sub: "Responsive Public Environment",
-		link: "research/transform",
+		link: "research/communit",
 		img: "./assets/icons/transform.svg",
 		color: "rgba(227,181,5,0.5)"
 	},
