@@ -37,7 +37,7 @@ class Home extends Component {
 							<Tile project="roma" side="left"></Tile>
 						</Row>
 						<Row>
-							<Tile project="transform" side="right"></Tile>
+							<Tile project="communit" side="right"></Tile>
 							<Tile project="cera" side="right"></Tile>
 						</Row>
 					</MediaQuery>
@@ -51,7 +51,7 @@ class Home extends Component {
 							<Tile project="roma" side="left"></Tile>
 						</Row>
 						<Row>
-							<Tile project="transform" side="right"></Tile>
+							<Tile project="communit" side="right"></Tile>
 							<Tile project="cera" side="left"></Tile>
 						</Row>
 					</MediaQuery>

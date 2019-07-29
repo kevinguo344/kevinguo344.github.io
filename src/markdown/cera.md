@@ -1,4 +1,4 @@
-### CERA (Ceramic Extruding Robot Arm)
+### CERA: Ceramic Extruding Robot Arm
 ###### January 2019 - Present
 
 For Spring 2019, I took [Prof. Jenny Sabin\'s](http://www.jennysabin.com/) research seminar in Matter Design Computation. As part of the seminar, I will be working on the next version of Polybrick, a project in Prof. Sabin\'s lab. 

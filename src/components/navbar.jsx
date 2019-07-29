@@ -8,7 +8,7 @@ export class Navbar extends React.Component{
 			<Row>
 				<Column width="1">
 					<Link to = "/">
-						<h2><i class="fas fa-angle-double-left"></i></h2>
+						<h2><i className="fas fa-angle-double-left"></i></h2>
 					</Link>
 				</Column>
 				<Column width="11">
