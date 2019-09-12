@@ -14,7 +14,7 @@ I\'ve always been interested in architecture and for my [Kessler Fellowship](htt
 
 ### Design
 
-The previous version of communIT was 
+The previous version of communIT was a 
 
 This page will get updated as work on communIT progresses throughout the semester.
 
