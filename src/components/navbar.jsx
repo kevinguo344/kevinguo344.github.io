@@ -13,7 +13,7 @@ export class Navbar extends React.Component{
 				</Column>
 				<Column width="11">
 					<h2>Kevin Guo</h2>
-				</Column>		
+				</Column>
 			</Row>
 		)
 	}

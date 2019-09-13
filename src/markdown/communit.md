@@ -1,5 +1,6 @@
 ### communIT
 ###### January 2019 - Present
+##### People: **Kevin Guo**, Carlos Aguiar, Alex Zhu, Keith Green
 
 <span style="display:block;text-align:center">
 <img src="./images/communIT.png" alt="That's me in that pic" width="75%" style="margin: 0 auto"/>
@@ -14,7 +15,7 @@ I\'ve always been interested in architecture and for my [Kessler Fellowship](htt
 
 ### Design
 
-The previous version of communIT was a 
+The previous version of communIT was an non-functional full-scale prototype that was made out of particle board and cardboard for weight saving. A number of user studies conducted by Carlos Aguiar prior to my involvement 
 
 This page will get updated as work on communIT progresses throughout the semester.
 
