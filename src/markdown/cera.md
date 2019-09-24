@@ -47,6 +47,11 @@ I stuck with using a stepper motor as I had used them extensively in previous ro
 
 #### Digital I/O Communication
 
+<span style="display:block;text-align:center">
+<img src="./images/abb-inside.jpg" width="75%" style="margin: 0 auto"/>
+*Inside of an ABB IRC5*
+</span>
+
 The next step was figuring out how to communicate between Grasshopper, the robot, and CERA all at once. The initial communication system involved using Firefly, a Grasshopper plugin for microcontrollers, to send Serial messages over a very long USB cable in this format: `Steps/Pulse Width`. So the Serial message `500/250` would be read by the Arduino as move 500 steps counterclockwise with a 250 µs delay in between pulses.
 
 While this solution was simple to implement, it didn\'t solve the inherent separation between robot movement and extruder action that would inevitably create issues with fabrication down the road. There had to be a new system that allowed for native communication the robot to control the extruder and any other components attached.
@@ -60,6 +65,3 @@ Building out the system was tricky. There were few references as to how to conne
 ### Kinect???
 
 ### Come Back Later for Updates!
-
-
-Polybrick has already gone through one version [previously](http://www.jennysabin.com/polybrick/). This new version of Polybrick is inspired by the microstructures that exists inside bone, with the goal of creating a material that is strong, materially efficient, and has properties not found in regular brick or other existing material. My role will focus on the robotic fabrication aspect of the project, using the Sulla robotic arm and other technologies to explore how to build Polybrick structures.
