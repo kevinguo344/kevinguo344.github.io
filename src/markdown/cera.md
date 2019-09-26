@@ -3,7 +3,7 @@
 ##### People: **Kevin Guo**, Madeleine Eggers, Karolina Piorko, Veronika Varga, Jenny Sabin
 
 <span style="display:block;text-align:center">
-<img src="./images/cera.jpg" width="75%" style="margin: 0 auto"/>
+<img src="./images/cera.jpg" width="90%" style="margin: 0 auto"/>
 *CERA fully assembled*
 </span>
 
@@ -13,22 +13,20 @@ For Spring 2019, I took [Prof. Jenny Sabin\'s](http://www.jennysabin.com/) resea
 
 In the past, the Lab used a pneumatic ceramic extruder system used for [RoboSense 2.0](https://static1.squarespace.com/static/5783b6f903596e5098f3fce8/t/5c3774c7352f539da89eceb8/1547138275044/Robosense+2.0.pdf). This system had a few issues; the pneumatics were independent of the robot so there was no coordination between the robot and the extruder. Also, pneumatic controls were very coarse, only allowing for a change in pressure. For the next iteration of RoboSense, we wanted to make a fabrication method that would allow for the construction of fine detailed objects such as [PolyBrick](http://www.jennysabin.com/polybrick/) in an architectural scale.
 
+#### Precedents
+
+We looked at 3 different ceramic extrusion systems 
+
 ### Design
 
-<div class="row">
-	<div class="six columns" style="display:block;text-align:center">
-		<span style="display:block;text-align:center">
-		<img src="./images/drawing_extruder1.png" alt="Basic" width="80%" style="margin: 0 auto"/>
-		*Exploded view of CERA*
-		</span>
-	</div>
-	<div class="six columns" style="display:block;text-align:center">
-		<span style="display:block;text-align:center">
-		<img src="./images/drawing_cutaway.png" alt="Basic" width="80%" style="margin: 0 auto"/>
-		*Cutaway diagram of CERA on robot arm*
-		</span>
-	</div>
-</div>
+<span style="display:block;text-align:center">
+<img src="./images/drawing_extruder1.png" alt="Basic" width="75%" style="margin: 0 auto"/>
+*Exploded view of CERA*
+</span>
+<span style="display:block;text-align:center">
+<img src="./images/drawing_cutaway.png" alt="Basic" width="75%" style="margin: 0 auto"/>
+*Cutaway diagram of CERA on robot arm*
+</span>
 
 The overall design of CERA is centered around a 2ft long 4.5in diameter aluminum tube with a plunger inside. The plunger is attached to a leadscrew, which itself is driven by a worm gearbox. This gearbox is powered by a 1712oz-in NEMA34 Closed Loop Stepper Motor.
 
@@ -56,12 +54,40 @@ The next step was figuring out how to communicate between Grasshopper, the robot
 
 While this solution was simple to implement, it didn\'t solve the inherent separation between robot movement and extruder action that would inevitably create issues with fabrication down the road. There had to be a new system that allowed for native communication the robot to control the extruder and any other components attached.
 
-After some searching, I learned that the ABB IRC5 robot controller that we were using had a I/O module built in called an DSQC 652. More importantly, the DSQC 652 had 16 digital outputs. One digital output is only capable of spitting out a 1 or a 0. But with two outputs, the output could be any number between 0 and 3 in binary (00, 01, 10, 11). With 15 outputs (1 output is reserved for saying whether the number is negative or positive), the output could be any number between 32767 and -32768.
+After some searching, I learned that the ABB IRC5 robot controller that we were using had a I/O module built in called an DSQC 652. More importantly, the DSQC 652 had 16 digital outputs. A digital output is only capable of spitting out a 1 or a 0, but that would be enough.
 
-Building out the system was tricky. There were few references as to how to connect the IRC5 to an Arduino. 
+Two digital outputs from the ABB\'s I/O module are wired from the inside of the IRC5 controller, past a barrier wall, up the robot arm, and onto the mounting plate with the Arduino board. One digital output dictates which direction the stepper motor would turn (On means clockwise, Off means counter-clockwise), which dictates whether the extruder piston goes forward or back. The other digital output is an On/Off switch for the stepper motor; as long as the output was On, the motor would make another "step" and continue rotating.
 
-### Grasshopper
+These outputs made it very easy to synchronize actions between robot and extruder. As all commands went through 
 
-### Kinect???
+##### Example Command Sequence
+
+| Command | What it does |
+|-------------| ------------- |
+|`digitalWrite(DO10_2, True)`| Sets direction of motor to move plunger forward |
+|`digitalWrite(DO10_1, True)`| Turns on stepper motor |
+|`wait(<time in milliseconds>)`| Gives extruder some time to "prime" |
+|`move(<some vector>)`| Moves robot a certain amount |
+|`digitalWrite(DO10_1, False)`| Turns off stepper motor |
+
+<div class="row">
+	<div class="five columns" style="display:block;text-align:center">
+		<span style="display:block;text-align:center">
+		<img src="./images/line-test.png" width="100%" style="margin: 0 auto"/>
+		*CERA extruding ceramic for a "line test"*
+		</span>
+	</div>
+	<div class="seven columns" style="display:block;text-align:center">
+		<span style="display:block;text-align:center">
+		<img src="./images/line-test-full.jpg" alt="Basic" width="100%" style="margin: 0 auto"/>
+		*Full results of first CERA line test*
+		</span>
+	</div>
+</div>
+
+### Adapative Print
+
+
+#### *An Architect, an Engineer, and a Robot walk into a bar...*	
 
 ### Come Back Later for Updates!

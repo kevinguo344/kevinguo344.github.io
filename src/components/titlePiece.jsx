@@ -36,35 +36,35 @@ let projects = {
 		sub: "Interactive Fabrication in AR",
 		link: "research/roma",
 		img: "./assets/icons/roma.svg",
-		color: "rgba(58,153,215,0.5)"
+		color: "rgba(227,181,5,0.325)"
 	},
 	crochetmatic: {
 		title: "CrochetMatic",
 		sub: "Knitting in 3D",
 		link: "research/crochetmatic",
 		img: "./assets/icons/crochetmatic.svg",
-		color: "rgba(219,80,74,0.5)"
+		color: "rgba(219,80,74,0.325)"
 	},
 	distopia: {
 		title: "Distopia",
 		sub: "Build a Better Voting District",
 		link: "research/distopia",
 		img: "./assets/icons/distopia.svg",
-		color: "rgba(138,201,38,0.5)"
+		color: "rgba(138,201,38,0.325)"
 	},
 	communit: {
 		title: "communIT",
 		sub: "Responsive Public Environment",
 		link: "research/communit",
 		img: "./assets/icons/transform.svg",
-		color: "rgba(227,181,5,0.5)"
+		color: "rgba(58,153,215,0.325)"
 	},
 	cera: {
 		title: "CERA",
-		sub: "Building blocks inspired by Nature",
+		sub: "Fine grain extrusion at Architectural Scale",
 		link: "research/cera",
 		img: "./assets/icons/polybrick.svg",
-		color: "rgba(138,201,38,0.5)"
+		color: "rgba(138,201,38,0.325)"
 	},
 	cuberpillar: {
 		title: "Cuberpillar",

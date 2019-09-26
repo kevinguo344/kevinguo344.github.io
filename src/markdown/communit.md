@@ -3,7 +3,7 @@
 ##### People: **Kevin Guo**, Carlos Aguiar, Alex Zhu, Keith Green
 
 <span style="display:block;text-align:center">
-<img src="./images/communIT.png" alt="That's me in that pic" width="75%" style="margin: 0 auto"/>
+<img src="./images/communIT.png" width="90%" style="margin: 0 auto"/>
 *A rendering of communIT*
 </span>
 
@@ -15,8 +15,33 @@ I\'ve always been interested in architecture and for my [Kessler Fellowship](htt
 
 ### Design
 
-The previous version of communIT was an non-functional full-scale prototype that was made out of particle board and cardboard for weight saving. A number of user studies conducted by Carlos Aguiar prior to my involvement 
+The previous version of communIT was an non-functional full-scale prototype that was made out of particle board and cardboard with velcro squares attached throughout the sides. Carlos Aguiar conducted user studies with this protoype over a course of 5 weeks in which pairs of students at Cornell would "co-design" by reconfiguring the prototype, attach "peripherals," and act out the activities they\'d want do with an actual working communIT. The point of these exercises was to see what people would use communIT for, what features they wanted in a working version, and what design shortcomings were present with the existing version.
 
-This page will get updated as work on communIT progresses throughout the semester.
+These findings were then sorted into 17 specific use cases and 6 overall themes:
+1. Reading
+2. Presenting
+3. Office Work
+4. Relaxing/Watching
+5. Playing
+6. Exhibiting Artwork
+
+The next version of communIT needed to support all these activities.
+
+### Construction
+
+<div class="row">
+	<div class="six columns" style="display:block;text-align:center">
+		<span style="display:block;text-align:center">
+		<img src="./images/panel_closed.png" alt="Basic" width="100%" style="margin: 0 auto"/>
+		*Two panels closed with acrylic surface*
+		</span>
+	</div>
+	<div class="six columns" style="display:block;text-align:center">
+		<span style="display:block;text-align:center">
+		<img src="./images/panel_open.png" alt="Basic" width="100%" style="margin: 0 auto"/>
+		*Two panels opened with LED grooves and strips *
+		</span>
+	</div>
+</div>
 
 ### Come Back Later for Updates!
