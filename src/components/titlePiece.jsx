@@ -61,7 +61,7 @@ let projects = {
 	},
 	cera: {
 		title: "CERA",
-		sub: "Fine grain extrusion at Architectural Scale",
+		sub: "Detailed extrusion at Architectural Scale",
 		link: "research/cera",
 		img: "./assets/icons/polybrick.svg",
 		color: "rgba(138,201,38,0.325)"

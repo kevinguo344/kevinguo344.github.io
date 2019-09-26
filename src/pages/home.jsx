@@ -33,12 +33,12 @@ class Home extends Component {
 							<p>My research focuses on the applications of robotics in design. Of special interest are the design and construction of interactive robotic environments and novel forms of robotic fabrication.</p>
 						</Row>
 						<Row>
-							<Tile project="crochetmatic" side="left"></Tile>
-							<Tile project="roma" side="left"></Tile>
+							<Tile project="communit" side="left"></Tile>
+							<Tile project="cera" side="left"></Tile>
 						</Row>
 						<Row>
-							<Tile project="communit" side="right"></Tile>
-							<Tile project="cera" side="right"></Tile>
+							<Tile project="crochetmatic" side="right"></Tile>
+							<Tile project="roma" side="right"></Tile>
 						</Row>
 					</MediaQuery>
 					<MediaQuery maxWidth={550}>
@@ -47,12 +47,12 @@ class Home extends Component {
 							<p>My research focuses on the applications of robotics in design, especially in architecture. Of special interest are the design and construction of interactive robotic environments and novel forms of robotic fabrication.</p>
 						</Row>
 						<Row>
-							<Tile project="crochetmatic" side="right"></Tile>
-							<Tile project="roma" side="left"></Tile>
-						</Row>
-						<Row>
 							<Tile project="communit" side="right"></Tile>
 							<Tile project="cera" side="left"></Tile>
+						</Row>
+						<Row>
+							<Tile project="crochetmatic" side="right"></Tile>
+							<Tile project="roma" side="left"></Tile>
 						</Row>
 					</MediaQuery>
 				</Page>
