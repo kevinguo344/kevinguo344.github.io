@@ -13,10 +13,6 @@ For Spring 2019, I took [Prof. Jenny Sabin\'s](http://www.jennysabin.com/) resea
 
 In the past, the Lab used a pneumatic ceramic extruder system used for [RoboSense 2.0](https://static1.squarespace.com/static/5783b6f903596e5098f3fce8/t/5c3774c7352f539da89eceb8/1547138275044/Robosense+2.0.pdf). This system had a few issues; the pneumatics were independent of the robot so there was no coordination between the robot and the extruder. Also, pneumatic controls were very coarse, only allowing for a change in pressure. For the next iteration of RoboSense, we wanted to make a fabrication method that would allow for the construction of fine detailed objects such as [PolyBrick](http://www.jennysabin.com/polybrick/) in an architectural scale.
 
-#### Precedents
-
-We looked at 3 different ceramic extrusion systems 
-
 ### Design
 
 <span style="display:block;text-align:center">
