@@ -15,6 +15,11 @@ I\'ve always been interested in architecture and for my [Kessler Fellowship](htt
 
 ### User Research & Concept Design
 
+<span style="display:block;text-align:center">
+<img src="./images/original_communit.png" width="90%" style="margin: 0 auto"/>
+*Carlos with the original version of communIT at MVR Commons*
+</span>
+
 The previous version of communIT was an non-functional full-scale prototype that was made out of particle board and cardboard with velcro squares attached throughout the sides. Carlos Aguiar conducted user studies with this protoype over a course of 5 weeks in which pairs of students at Cornell would "co-design" by reconfiguring the prototype, attach "peripherals," and act out the activities they\'d want do with an actual working communIT. The point of these exercises was to see what people would use communIT for, what features they wanted in a working version, and what design shortcomings were present with the existing version.
 
 These findings were then sorted into 17 specific use cases and 6 overall themes:
@@ -25,12 +30,14 @@ These findings were then sorted into 17 specific use cases and 6 overall themes:
 5. Playing
 6. Exhibiting Artwork
 
+Taking the findings and use cases, I developed scenarios for each of the use cases, detailing how a user might use communIT in each of the configurations and how they might best interact with the panels (touch screen, web app, gesture-based interface, etc.) in order to inform both the types of configurations were most useful and give an idea of the technologies we'd need to integrate in the final design.
+
 <span style="display:block;text-align:center">
 <img src="./images/design_cases_cropped.png" width="90%" style="margin: 0 auto"/>
 *All design cases and user scenarios*
 </span>
 
-The next version of communIT needed to support all these activities.
+With all the cases developed and scenarios, Carlos spent of the semester developing the new version of communIT with feedback from me and the rest of the team.
 
 <div class="row">
 	<div class="six columns" style="display:block;text-align:center">
@@ -49,13 +56,15 @@ The next version of communIT needed to support all these activities.
 
 <span style="display:block;text-align:center">
 <img src="./images/model.png" width="90%" style="margin: 0 auto"/>
-*Scale model of final design for communIT*
+*Scale model of final concept design for communIT*
 </span>
 
 ### Assembly Design & Manufacturing
 
+With the final concept for communIT completed, I took over the rest of the design process, mainly focusing on manufacturability and mechatronic applications. The first consideration was how to deal with the very practical weight and torque requirements that would be needed to power each of the panels. An earlier proposal to make the panels out of MDF and acrylic would have proven to be too heavy to either move with motors that were 
+
 <span style="display:block;text-align:center">
-<img src="./images/panel_explode1.png" width="80%" style="margin: 0 auto"/>
+<img src="./images/panel_explode.png" width="90%" style="margin: 0 auto"/>
 *Exploded view of the panel assembly*
 </span>
 

@@ -16,7 +16,7 @@ class Home extends Component {
 					</Row>
 					<Row>
 						<Column width = "8">
-							<p>I'm currently a student Cornell University pursuing a Masters of Engineering in Mechanical Engineering focusing on Robotics. My advisor is <a href="https://arl.human.cornell.edu/people_keith.htm">Prof. Keith Green</a> of the Design + Environmental Analysis (DEA) department. I completed my undergrad degree in Information Science, Systems, & Technology also from Cornell. </p>
+							<p>I'm currently a student Cornell University pursuing a Masters of Engineering in Mechanical Engineering focusing on Robotics and Product Design. My advisor is <a href="https://arl.human.cornell.edu/people_keith.htm">Prof. Keith Green</a> of the Design + Environmental Analysis (DEA) department and I also work with <a href = "http://www.jennysabin.com/">Prof. Jenny Sabin</a> of the Architecture department. I completed my undergrad degree in Information Science, Systems, & Technology also from Cornell. </p>
 							<p>I'm interested in learning how technology can make design more accessible, useful, and exciting, especially in its applications to architecture and the built environment.</p>
 						</Column>
 						<Column width = "4">
