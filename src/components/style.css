@@ -25,7 +25,7 @@ p{
 }
 .pageView{
 	height: 100vh;
-	max-height: 636px;
+	/*max-height: 636px;*/
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -65,6 +65,7 @@ a {
 	height: 6em;
 	top: 50%;
 	margin-top: -3em;
+	width: 50%;
 }
 
 .titleCard.left .titleContainer{

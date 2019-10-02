@@ -61,11 +61,13 @@ With all the cases developed and scenarios, Carlos spent of the semester develop
 
 ### Assembly Design & Manufacturing
 
-With the final concept for communIT completed, I took over the rest of the design process, mainly focusing on manufacturability and mechatronic applications. The first consideration was how to deal with the very practical weight and torque requirements that would be needed to power each of the panels. An earlier proposal to make the panels out of MDF and acrylic would have proven to be too heavy to either move with motors that were 
+With the concept for communIT completed, I took over the rest of the design process, mainly focusing on manufacturability and mechatronic applications. The first consideration was how to deal with the very practical weight and torque requirements that would be needed to power each of the panels. An earlier proposal to make the panels out of MDF and acrylic would have proven to be too heavy to either move with motors that were within our budget and unsafe in case of a mechanical failure. Instead, we settled on a "sandwich" of two 1" thick CNC\'d Polystyrene foam separated by 0.5" plastic spacer with 0.06" thick translucent laser cut acrylic on either side.
+
+The finalized design of communIT stands 76 inches (193 cm) tall and 125 inches (317.5 cm) wide. This size was chosen as it was taller than an adult man but not so tall as to feel completely overwhelming. The artifact is made of 8 panels, ranging in size from 30 in by 20 in with the smallest panel to 77 inch by 45 inch for the largest panel.
 
 <span style="display:block;text-align:center">
 <img src="./images/panel_explode.png" width="90%" style="margin: 0 auto"/>
-*Exploded view of the panel assembly*
+*Exploded render of the panel assembly*
 </span>
 
 <div class="row">
@@ -83,4 +85,9 @@ With the final concept for communIT completed, I took over the rest of the desig
 	</div>
 </div>
 
-### Come Back Later for Updates!
+<span style="display:block;text-align:center">
+<img src="./images/light_test_temporary.png" width="90%" style="margin: 0 auto"/>
+*A test panel with embedded LEDs being tested.*
+</span>
+
+#### Assembly is still in progress and this page will be updated as work progresses. Stay Tuned!

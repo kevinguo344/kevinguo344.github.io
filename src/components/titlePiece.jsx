@@ -20,7 +20,7 @@ export class Tile extends React.Component{
 					<div className={"titleCard " + this.side}>
 						<div className="titleContainer">
 							<h2>{this.project.title}</h2>
-							<h5>{this.project.sub}</h5>
+							<h6>{this.project.sub}</h6>
 						</div>
 						<div className="background" style={this.style}></div>
 					</div>
@@ -54,7 +54,7 @@ let projects = {
 	},
 	communit: {
 		title: "communIT",
-		sub: "Responsive Public Environment",
+		sub: "A Responsive Public Environment",
 		link: "research/communit",
 		img: "./assets/icons/transform.svg",
 		color: "rgba(58,153,215,0.325)"
@@ -63,7 +63,7 @@ let projects = {
 		title: "CERA",
 		sub: "Detailed extrusion at Architectural Scale",
 		link: "research/cera",
-		img: "./assets/icons/polybrick.svg",
+		img: "./assets/icons/cera.svg",
 		color: "rgba(138,201,38,0.325)"
 	},
 	cuberpillar: {

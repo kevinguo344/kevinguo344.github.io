@@ -87,8 +87,6 @@ These outputs made it very easy to synchronize actions between robot and extrude
 
 ### Adapative Print
 
-Adaptive print is a new part of RoboSense 3.0 that incorporates work done [previously](http://www.ttistengteng.com/PicDetail.aspx?id=489) and will involve surface reconstruction from a Kinect. This page will be updated with more information about adaptive print as time goes on.
+Adaptive print is a new part of RoboSense 3.0 that incorporates work done [previously](http://www.ttistengteng.com/PicDetail.aspx?id=489) and will involve surface reconstruction from a Kinect.
 
-#### *An Architect, an Engineer, and a Robot walk into a bar...*	
-
-### Come Back Later for Updates!
+#### This page will be updated with more information as work progresses. Stay Tuned!
