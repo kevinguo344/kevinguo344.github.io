@@ -35,9 +35,13 @@ The overall design of CERA is centered around a 2ft long 4.5in diameter aluminum
 *1712oz-in NEMA34 Closed Loop Stepper Motor*
 </span>
 
-One of the first decisions that had to be made was which motor to use for the extruder. A stepper motor powered extruder was attempted before in the lab but had to be abandoned as discrepancies between the motor\'s reported and actual position made it virtually impossible use [accurately](http://www.ttistengteng.com/PicDetail.aspx?id=489).
+One of the first decisions that had to be made was which motor to use for the extruder. A stepper motor powered extruder was attempted before in the lab but had to be abandoned as discrepancies between the motor\'s reported and actual position made it virtually impossible use accurately. That ultimately blocked progress on RoboSense and forced it to be shelving until I arrived at the lab.
 
 I stuck with using a stepper motor as I had used them extensively in previous roles and knew that a stepper would have the requisite torque to push clay through a tube. To deal with problems with positioning, I chose a closed-loop stepper motor system, a stepper motor with a built-in encoder that corrects for any discrepancies in motor position. 
+
+#### Machina
+
+To command the robot, we decided upon [Machina](https://github.com/RobotExMachina), an open-source framework for robots that allows for real-time control and feedback. This allowed for us to control the robot directly from either a PC Desktop or from Grasshopper without the need for predefining a sequence of actions or using RobotStudio, ABB\'s proprietary programming software for its robots. It also had a large set of commands that allow for a rich set of functionality including for digital I/O communication detailed below. 
 
 #### Digital I/O Communication
 
@@ -54,7 +58,7 @@ After some searching, I learned that the ABB IRC5 robot controller that we were 
 
 Two digital outputs from the ABB\'s I/O module are wired from the inside of the IRC5 controller, past a barrier wall, up the robot arm, and onto the mounting plate with the Arduino board. One digital output dictates which direction the stepper motor would turn (On means clockwise, Off means counter-clockwise), which dictates whether the extruder piston goes forward or back. The other digital output is an On/Off switch for the stepper motor; as long as the output was On, the motor would make another "step" and continue rotating.
 
-These outputs made it very easy to synchronize actions between robot and extruder. As all commands went through 
+These outputs made it very easy to synchronize actions between robot and extruder. As all commands went through Machina and therefore the robot, the sequence guaranteed extrusion concurrent with robot movement.
 
 ##### Example Command Sequence
 
@@ -83,6 +87,7 @@ These outputs made it very easy to synchronize actions between robot and extrude
 
 ### Adapative Print
 
+Adaptive print is a new part of RoboSense 3.0 that incorporates work done [previously](http://www.ttistengteng.com/PicDetail.aspx?id=489) and will involve surface reconstruction from a Kinect. This page will be updated with more information about adaptive print as time goes on.
 
 #### *An Architect, an Engineer, and a Robot walk into a bar...*	
 
