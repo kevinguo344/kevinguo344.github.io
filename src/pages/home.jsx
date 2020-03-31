@@ -18,7 +18,7 @@ class Home extends Component {
 						<Column width = "8">
 							<p>I'm a product engineer & designer at <a href="https://oriliving.com/"><strong>Ori Inc.</strong></a>, a robotic furniture company.</p>
 							<p>I'm interested in learning how technology can make design more accessible, useful, and exciting, especially in its applications to architecture and the built environment.</p>
-							<p>I studied at at <strong>Cornell University</strong> for a Masters of Engineering in Mechanical Engineering focusing on Robotics and Product Design and a BS in Information Science, Systems, & Technology. My advisor was <a href="https://arl.human.cornell.edu/people_keith.htm">Prof. Keith Green</a> of the Design + Environmental Analysis (DEA) department and I also worked with <a href = "http://www.jennysabin.com/">Prof. Jenny Sabin</a> of the Architecture department.</p>
+							<p>I studied at at <strong>Cornell University</strong> for a Masters of Engineering in Mechanical Engineering focusing on Robotics and Product Design and a BS in Information Science, Systems, & Technology (ISST). My advisor was <a href="https://arl.human.cornell.edu/people_keith.htm">Prof. Keith Green</a> of Design + Environmental Analysis (DEA) and I also worked with <a href = "http://www.jennysabin.com/">Prof. Jenny Sabin</a> of Architecture.</p>
 						</Column>
 						<Column width = "4">
 							<h5><a href="https://www.linkedin.com/in/kevinlguo/">LinkedIn</a></h5>
