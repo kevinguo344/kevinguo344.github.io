@@ -8,4 +8,4 @@ Distopia is an offshoot of the [Design Assistant project](http://hrc2.io/project
 
 In America, Congressional voting districts are determined every 10 years after the US Census. However, drawing the boundaries for these districts are incredibly hard and can be subject to all sorts of manipulation, like gerrymandering. But while an unfair district can be easy to spot, it\'s hard to say what a fair district is.
 
-The law dictates that each district in a state must have roughly the same population and must be continuous (they can't be made up of separate pieces), but beyond that doesn\'t provide any other guidelines. There are also other
+The law dictates that each district in a state must have roughly the same population and must be continuous (they can't be made up of separate pieces), but beyond that doesn\'t provide any other guidelines. There are also other issues that needed to be addressed that such as 
