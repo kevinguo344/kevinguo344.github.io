@@ -16,8 +16,9 @@ class Home extends Component {
 					</Row>
 					<Row>
 						<Column width = "8">
-							<p>I'm currently a student Cornell University pursuing a Masters of Engineering in Mechanical Engineering focusing on Robotics and Product Design. My advisor is <a href="https://arl.human.cornell.edu/people_keith.htm">Prof. Keith Green</a> of the Design + Environmental Analysis (DEA) department and I also work with <a href = "http://www.jennysabin.com/">Prof. Jenny Sabin</a> of the Architecture department. I completed my undergrad degree in Information Science, Systems, & Technology also from Cornell. </p>
+							<p>I'm a product engineer & designer at <a href="https://oriliving.com/"><strong>Ori Inc.</strong></a>, a robotic furniture company.</p>
 							<p>I'm interested in learning how technology can make design more accessible, useful, and exciting, especially in its applications to architecture and the built environment.</p>
+							<p>I studied at at <strong>Cornell University</strong> for a Masters of Engineering in Mechanical Engineering focusing on Robotics and Product Design and a BS in Information Science, Systems, & Technology. My advisor was <a href="https://arl.human.cornell.edu/people_keith.htm">Prof. Keith Green</a> of the Design + Environmental Analysis (DEA) department and I also worked with <a href = "http://www.jennysabin.com/">Prof. Jenny Sabin</a> of the Architecture department.</p>
 						</Column>
 						<Column width = "4">
 							<h5><a href="https://www.linkedin.com/in/kevinlguo/">LinkedIn</a></h5>
@@ -39,6 +40,9 @@ class Home extends Component {
 						<Row>
 							<Tile project="crochetmatic" side="right"></Tile>
 							<Tile project="roma" side="right"></Tile>
+						</Row>
+						<Row>
+							<Tile project="ori" side="left"></Tile>
 						</Row>
 					</MediaQuery>
 					<MediaQuery maxWidth={550}>

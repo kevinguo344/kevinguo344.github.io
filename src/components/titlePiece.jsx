@@ -66,6 +66,13 @@ let projects = {
 		img: "./assets/icons/cera.svg",
 		color: "rgba(138,201,38,0.325)"
 	},
+	ori:{
+		title: "Ori",
+		sub: "Robotic Interiors",
+		link: "research/ori",
+		img: "./assets/icons/ori.svg",
+		color: "rgba(58,153,215,0.325)"
+	},
 	cuberpillar: {
 		title: "Cuberpillar",
 		sub: "Combining the geometric and organic",

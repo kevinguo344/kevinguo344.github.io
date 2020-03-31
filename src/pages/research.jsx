@@ -7,9 +7,11 @@ const crochetmatic = require('../markdown/crochetmatic.md');
 const distopia = require('../markdown/distopia.md');
 const communit = require('../markdown/communit.md');
 const cera = require('../markdown/cera.md');
+const ori = require('../markdown/ori.md');
 
 export const RoMA = () => ( <Project><Markdown>{roma}</Markdown></Project> )
 export const CrochetMatic = () => ( <Project><Markdown>{crochetmatic}</Markdown></Project> )
 export const Distopia = () => ( <Project><Markdown>{distopia}</Markdown></Project> )
 export const CommunIT = () => ( <Project><Markdown>{communit}</Markdown></Project> )
 export const Cera = () => ( <Project><Markdown>{cera}</Markdown></Project> )
+export const Ori = () => ( <Project><Markdown>{ori}</Markdown></Project> )

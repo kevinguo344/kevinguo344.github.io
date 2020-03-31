@@ -1,5 +1,5 @@
-### Ori
-###### May 2018 - August 2018
+### Ori Inc.
+###### January 2020 - Present, May 2018 - August 2018
 
 ### Background
 
