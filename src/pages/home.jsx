@@ -43,6 +43,7 @@ class Home extends Component {
 						</Row>
 						<Row>
 							<Tile project="ori" side="left"></Tile>
+							<Tile project="distopia" side="left"></Tile>
 						</Row>
 					</MediaQuery>
 					<MediaQuery maxWidth={550}>
