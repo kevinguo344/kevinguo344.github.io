@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Home from './pages/home.jsx';
-import {RoMA, CrochetMatic, Distopia, CommunIT, Cera, Ori} from './pages/research.jsx';
+import {RoMA, CrochetMatic, Distopia, CommunIT, Cera, Ori} from './pages/projects.jsx';
 import { BrowserRouter as Router, Route} from 'react-router-dom'
 
 
@@ -10,12 +10,12 @@ class App extends Component {
 			<Router>
 				<div>
 					<Route exact path={`/`} render={ (routerProps) => < Home routerProps={routerProps} />} />
-					<Route exact path={`/research/roma`} render={ (routerProps) => < RoMA routerProps={routerProps} />} />
-					<Route exact path={`/research/crochetmatic`} render={ (routerProps) => < CrochetMatic routerProps={routerProps} />} />
-					<Route exact path={`/research/distopia`} render={ (routerProps) => < Distopia routerProps={routerProps} />} />
-					<Route exact path={`/research/communit`} render={ (routerProps) => < CommunIT routerProps={routerProps} />} />
-					<Route exact path={`/research/cera`} render={ (routerProps) => < Cera routerProps={routerProps} />} />
-					<Route exact path={`/research/ori`} render={ (routerProps) => < Ori routerProps={routerProps} />} />
+					<Route exact path={`/projects/roma`} render={ (routerProps) => < RoMA routerProps={routerProps} />} />
+					<Route exact path={`/projects/crochetmatic`} render={ (routerProps) => < CrochetMatic routerProps={routerProps} />} />
+					<Route exact path={`/projects/distopia`} render={ (routerProps) => < Distopia routerProps={routerProps} />} />
+					<Route exact path={`/projects/communit`} render={ (routerProps) => < CommunIT routerProps={routerProps} />} />
+					<Route exact path={`/projects/cera`} render={ (routerProps) => < Cera routerProps={routerProps} />} />
+					<Route exact path={`/projects/ori`} render={ (routerProps) => < Ori routerProps={routerProps} />} />
 				</div>
 			</Router>
 		);

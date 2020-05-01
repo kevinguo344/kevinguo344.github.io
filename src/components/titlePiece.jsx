@@ -34,79 +34,44 @@ let projects = {
 	roma: {
 		title: "RoMA",
 		sub: "Interactive Fabrication in AR",
-		link: "research/roma",
+		link: "projects/roma",
 		img: "./assets/icons/roma.svg",
 		color: "rgba(227,181,5,0.325)"
 	},
 	crochetmatic: {
 		title: "CrochetMatic",
 		sub: "Knitting in 3D",
-		link: "research/crochetmatic",
+		link: "projects/crochetmatic",
 		img: "./assets/icons/crochetmatic.svg",
 		color: "rgba(219,80,74,0.325)"
 	},
 	distopia: {
 		title: "Distopia",
 		sub: "Build a Better Voting District",
-		link: "research/distopia",
+		link: "projects/distopia",
 		img: "./assets/icons/distopia.svg",
 		color: "rgba(138,201,38,0.325)"
 	},
 	communit: {
 		title: "communIT",
 		sub: "A Responsive Public Environment",
-		link: "research/communit",
+		link: "projects/communit",
 		img: "./assets/icons/transform.svg",
 		color: "rgba(58,153,215,0.325)"
 	},
 	cera: {
 		title: "CERA",
 		sub: "Detailed extrusion at Architectural Scale",
-		link: "research/cera",
+		link: "projects/cera",
 		img: "./assets/icons/cera.svg",
 		color: "rgba(138,201,38,0.325)"
 	},
 	ori:{
 		title: "Ori",
 		sub: "Robotic Interiors",
-		link: "research/ori",
+		link: "projects/ori",
 		img: "./assets/icons/ori.svg",
 		color: "rgba(58,153,215,0.325)"
-	},
-	cuberpillar: {
-		title: "Cuberpillar",
-		sub: "Combining the geometric and organic",
-		link: "designs/cuberpillar",
-		img: "./assets/icons/cuberpillar.gif",
-		color: "rgba(255,255,255,0)"
-	},
-	ocularmd: {
-		title: "OcularMD",
-		sub: "Letting the world see again",
-		link: "designs/ocularmd",
-		img: "./assets/icons/ocularmd_icon.png",
-		color: "rgba(255,255,255,0)"
-	},
-	ciac: {
-		title: "CIAC VII",
-		sub: "Bringing order to a messy brand",
-		link: "designs/ciac",
-		img: "./assets/icons/ciac_icon.png",
-		color: "rgba(255,255,255,0)"
-	},
-	lcl: {
-		title: "Life Changing Labs",
-		sub: "Giving startups a new beginning",
-		link: "designs/lcl",
-		img: "./assets/icons/lcl_icon.png",
-		color: "rgba(255,255,255,0)"
-	},
-	cornellems: {
-		title: "Cornell EMS",
-		sub: "Redefining an old stalwart",
-		link: "designs/cornellems",
-		img: "./assets/icons/roma.png",
-		color: "rgba(255,255,255,0)"
 	}
 }
 
