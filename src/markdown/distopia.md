@@ -1,6 +1,6 @@
 ### Distopia
 ###### August 2018 - December 2018
-##### People: Matt Law, **Kevin Guo**, 
+##### Matt Law, **Kevin Guo**, 
 
 Distopia is an offshoot of the [Design Assistant project](http://hrc2.io/projects/Collaborative-Design) at Prof. Guy Hoffman\'s [Human-Robot Collaboration & Companionship Lab](http://hrc2.io/). The goal of Distopia is to build a robotic design assistant that would facilitate the creation of better, fairer voting districts.
 

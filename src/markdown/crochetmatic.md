@@ -1,6 +1,6 @@
 ### CrochetMatic: Volumetric 3D Knitting
 ###### May 2017 - May 2018
-##### People: **Kevin Guo**, Olav Imsdahl, François Guimbretière, Scott Hudson
+##### **Kevin Guo**, Olav Imsdahl, François Guimbretière, Scott Hudson
 
 <div class="row">
 	<div class="six columns" style="display:block;text-align:center">
@@ -168,7 +168,7 @@ With the toolpaths set, I could output a G-code file from Fusion360, which after
 
 <div class="row">
 	<div class="seven columns video-responsive">
-		<iframe width="560" height="315" src="https://drive.google.com/file/d/1NX24JxTp0RCihOpacNhDnv6LlEIOh0n9/preview"></iframe>
+		<iframe width="560" height="250" src="https://drive.google.com/file/d/1NX24JxTp0RCihOpacNhDnv6LlEIOh0n9/preview"></iframe>
 	</div>
 	<div class="five columns" style="display:block;text-align:center">
 	<img src="./images/scarf.png" alt="Label" width="100%" style="margin: 0 auto"/>

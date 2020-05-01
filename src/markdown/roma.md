@@ -6,7 +6,7 @@
 *That's me in the pic!*
 </span>
 
-##### Authors: Huaishu Peng, Jimmy Briggs, Cheng-Yao Wang, **Kevin Guo**, Joseph Kider, Stefanie Mueller, Patrick Baudisch, François Guimbretière
+##### Huaishu Peng, Jimmy Briggs, Cheng-Yao Wang, **Kevin Guo**, Joseph Kider, Stefanie Mueller, Patrick Baudisch, François Guimbretière
 ##### 2018 Conference on Human Factors in Computing Systems **(CHI 2018)** 
 [Read the Paper here](https://drive.google.com/file/d/1dfZdkDhoW0ewAtWpj-f13B29UcXLNtwD/view?usp=sharing)
 
@@ -41,7 +41,7 @@ While it could work, after some discussion with the rest of the team, I realized
 
 I proposed 3 menu interaction schemes and made interactive Javascript prototypes to demonstrate them in Framer (all three prototypes are below).
 
-<div class="row">
+<div style="width=100%">
 	<div class="four columns" style="display:block;text-align:center">
 		<h4>Stack Menu</h4>
 		<img src="./images/stack.svg" alt="AR Interactions" width="50%" style="margin: 0 auto"><img/>
@@ -55,15 +55,15 @@ I proposed 3 menu interaction schemes and made interactive Javascript prototypes
 		<img src="./images/ring.svg" alt="AR Interactions" width="50%" style="margin: 0 auto"><img/>
 	</div>
 </div>
-<div class="row">
-	<div class="four columns" style="display:block;text-align:center; height:350px; overflow:hidden; margin-bottom: 2em">
-		<iframe class="framer" src="https://framer.cloud/ilfyY/" width="600" height="900" style="display:block;transform:scale(0.5);transform-origin: top left; border:none"></iframe>
+<div style="width=100%">
+	<div class="four columns framer-container">
+		<iframe class="framer" src="https://framer.cloud/ilfyY/"></iframe>
 	</div>
-	<div class="four columns" style="display:block;text-align:center; height:350px; overflow:hidden; margin-bottom: 2em">
-		<iframe class="framer" src="https://framer.cloud/agbTc/" width="600" height="900" style="display:block;transform:scale(0.5);transform-origin: top left; border:none;"></iframe>
+	<div class="four columns framer-container">
+		<iframe class="framer" src="https://framer.cloud/agbTc/"></iframe>
 	</div>
-	<div class="four columns" style="display:block;text-align:center; height:350px; overflow:hidden; margin-bottom: 2em">
-		<iframe class="framer" src="https://framer.cloud/HcxQi/" width="600" height="900" style="display:block;transform:scale(0.5);transform-origin: top left;border:none"></iframe>
+	<div class="four columns framer-container">
+		<iframe class="framer" src="https://framer.cloud/HcxQi/"></iframe>
 	</div>
 </div>
 

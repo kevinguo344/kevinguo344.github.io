@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import {Row, Column, Container} from './skeleton.jsx';
 import Navbar from './navbar.jsx';
-import ReactMarkdown from 'react-markdown/with-html';
+import ReactMarkdown from 'react-markdown';
 import Sources from './sourcesIndex.jsx';
 import "./style.css";
-
 class Project extends Component {
 	constructor(props){
 		super(props);
@@ -20,11 +19,15 @@ class Project extends Component {
 	}
 	render() {
 		return(
-			<Container>
+			<Container> 
 				<Navbar></Navbar>
 				<Row>
-					<Column className="projects" width="12">
-						<ReactMarkdown source={ this.state.markdown } escapeHtml={false} />
+					<Column className="projects" width="10" offset="1">
+						<ReactMarkdown
+							source={this.state.markdown} 
+							escapeHtml={false} 
+						/>
+
 					</Column>
 				</Row>
 			</Container>

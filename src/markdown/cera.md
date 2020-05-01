@@ -1,9 +1,9 @@
 ### CERA: Ceramic Extruding Robot Arm
 ###### January 2019 - Present
-##### People: **Kevin Guo**, Madeleine Eggers, Karolina Piorko, Veronika Varga, Jenny Sabin
+##### **Kevin Guo**, Madeleine Eggers, Karolina Piorko, Veronika Varga, Jenny Sabin
 
 <span style="display:block;text-align:center">
-<img src="./images/cera.jpg" width="90%" style="margin: 0 auto"/>
+<img src='./images/cera.jpg" width="90%" style="margin: 0 auto"/>
 *CERA fully assembled*
 </span>
 
@@ -16,11 +16,11 @@ In the past, the Lab used a pneumatic ceramic extruder system used for [RoboSens
 ### Design
 
 <span style="display:block;text-align:center">
-<img src="./images/drawing_extruder1.png" alt="Basic" width="75%" style="margin: 0 auto"/>
+<img src='./images/drawing_extruder1.png' alt="Basic" width="75%" style="margin: 0 auto"/>
 *Exploded view of CERA*
 </span>
 <span style="display:block;text-align:center">
-<img src="./images/drawing_cutaway.png" alt="Basic" width="75%" style="margin: 0 auto"/>
+<img src='./images/drawing_cutaway.png' alt="Basic" width="75%" style="margin: 0 auto"/>
 *Cutaway diagram of CERA on robot arm*
 </span>
 
@@ -31,7 +31,7 @@ The overall design of CERA is centered around a 2ft long 4.5in diameter aluminum
 #### Motor
 
 <span style="display:block;text-align:center">
-<img src="./images/motors.png" width="75%" style="margin: 0 auto"/>
+<img src='./images/motors.png' width="75%" style="margin: 0 auto"/>
 *1712oz-in NEMA34 Closed Loop Stepper Motor*
 </span>
 
@@ -46,7 +46,7 @@ To command the robot, we decided upon [Machina](https://github.com/RobotExMachin
 #### Digital I/O Communication
 
 <span style="display:block;text-align:center">
-<img src="./images/abb-inside.jpg" width="75%" style="margin: 0 auto"/>
+<img src='./images/abb-inside.jpg' width="75%" style="margin: 0 auto"/>
 *Inside of an ABB IRC5*
 </span>
 
@@ -73,13 +73,13 @@ These outputs made it very easy to synchronize actions between robot and extrude
 <div class="row">
 	<div class="five columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/line-test.png" width="100%" style="margin: 0 auto"/>
+		<img src='./images/line-test.png' width="100%" style="margin: 0 auto"/>
 		*CERA extruding ceramic for a "line test"*
 		</span>
 	</div>
 	<div class="seven columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/line-test-full.jpg" alt="Basic" width="100%" style="margin: 0 auto"/>
+		<img src='./images/line-test-full.jpg' alt="Basic" width="100%" style="margin: 0 auto"/>
 		*Full results of first CERA line test*
 		</span>
 	</div>

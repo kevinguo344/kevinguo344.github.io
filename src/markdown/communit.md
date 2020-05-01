@@ -1,6 +1,6 @@
 ### communIT
 ###### January 2019 - Present
-##### People: **Kevin Guo**, Carlos Aguiar, Alex Zhu, Keith Green
+##### **Kevin Guo**, Carlos Aguiar, Alex Zhu, Keith Green
 
 <span style="display:block;text-align:center">
 <img src="./images/communIT.png" width="90%" style="margin: 0 auto"/>

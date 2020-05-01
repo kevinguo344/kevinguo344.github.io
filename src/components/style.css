@@ -89,9 +89,13 @@ a {
 .projects img{
 	margin: auto;
 }
-.projects .framer{
-	height: 313.5px;
-	overflow: hidden;
+.framer{
+	display: block;
+	transform: scale(0.45);
+	transform-origin: top left;
+	border: none;
+	width: 550px;
+	height: 675px;
 }
 
 .video-responsive{
@@ -103,7 +107,14 @@ a {
 .video-responsive iframe{
     left:0;
     top:0;
-    height:100%;
+    height:75%;
     width:100%;
     position:absolute;
+}
+.framer-container{
+	display: block;
+	text-align: center;
+	height: 350px;
+	overflow: hidden;
+	margin-bottom: 1em
 }

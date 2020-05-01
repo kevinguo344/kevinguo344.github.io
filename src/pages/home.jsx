@@ -41,10 +41,6 @@ class Home extends Component {
 							<Tile project="crochetmatic" side="right"></Tile>
 							<Tile project="roma" side="right"></Tile>
 						</Row>
-						<Row>
-							<Tile project="ori" side="left"></Tile>
-							<Tile project="distopia" side="left"></Tile>
-						</Row>
 					</MediaQuery>
 					<MediaQuery maxWidth={550}>
 						<Row>

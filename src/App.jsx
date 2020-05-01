@@ -12,16 +12,15 @@ class App extends Component {
 					<Route exact path={`/`} render={ (routerProps) => < Home routerProps={routerProps} />} />
 					<Route exact path={`/projects/roma`} render={ (routerProps) => < RoMA routerProps={routerProps} />} />
 					<Route exact path={`/projects/crochetmatic`} render={ (routerProps) => < CrochetMatic routerProps={routerProps} />} />
-					<Route exact path={`/projects/distopia`} render={ (routerProps) => < Distopia routerProps={routerProps} />} />
 					<Route exact path={`/projects/communit`} render={ (routerProps) => < CommunIT routerProps={routerProps} />} />
 					<Route exact path={`/projects/cera`} render={ (routerProps) => < Cera routerProps={routerProps} />} />
-					<Route exact path={`/projects/ori`} render={ (routerProps) => < Ori routerProps={routerProps} />} />
 				</div>
 			</Router>
 		);
 	}
 }
-
+/*<Route exact path={`/projects/distopia`} render={ (routerProps) => < Distopia routerProps={routerProps} />} />
+<Route exact path={`/projects/ori`} render={ (routerProps) => < Ori routerProps={routerProps} />} />*/
 
 //<Route exact path=`/research/roma` render={RoMA}></Route>
 //<Route exact path=`/research/crochetmatic` component={CrochetMatic}></Route>
