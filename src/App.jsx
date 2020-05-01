@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Home from './pages/home.jsx';
 import {RoMA, CrochetMatic, Distopia, CommunIT, Cera, Ori} from './pages/research.jsx';
-import {Cuberpillar, OcularMD, CIAC, LCL, CUEMS} from './pages/designs.jsx';
 import { BrowserRouter as Router, Route} from 'react-router-dom'
 
 
@@ -17,11 +16,6 @@ class App extends Component {
 					<Route exact path={`/research/communit`} render={ (routerProps) => < CommunIT routerProps={routerProps} />} />
 					<Route exact path={`/research/cera`} render={ (routerProps) => < Cera routerProps={routerProps} />} />
 					<Route exact path={`/research/ori`} render={ (routerProps) => < Ori routerProps={routerProps} />} />
-					<Route exact path={`/designs/cuberpillar`} render={ (routerProps) => < Cuberpillar routerProps={routerProps} />} />
-					<Route exact path={`/designs/ocularmd`} render={ (routerProps) => < OcularMD routerProps={routerProps} />} />
-					<Route exact path={`/designs/ciac`} render={ (routerProps) => < CIAC routerProps={routerProps} />} />
-					<Route exact path={`/designs/lcl`} render={ (routerProps) => < LCL routerProps={routerProps} />} />
-					<Route exact path={`/designs/cornellems`} render={ (routerProps) => < CUEMS routerProps={routerProps} />} />
 				</div>
 			</Router>
 		);

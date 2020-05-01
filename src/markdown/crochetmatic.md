@@ -172,7 +172,7 @@ With the toolpaths set, I could output a G-code file from Fusion360, which after
 	</div>
 	<div class="five columns" style="display:block;text-align:center">
 	<img src="./images/scarf.png" alt="Label" width="100%" style="margin: 0 auto"/>
-*The result of a year of work: a scarf*
+*A scarf made on CrochetMatic*
 	</div>
 </div>
 
