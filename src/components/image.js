@@ -27,12 +27,12 @@ const Image = () => {
       }
     }
   `)
-  if (!childImageSharp && extension === 'svg') {
-    return <img style={imageStyle} src={publicURL} alt={alt} />
+  console.log(extension)
+  if (extension === 'svg') {
+    return <img src={publicURL}/>
+  } else{
+    return <Img fluid={data.file.childImageSharp.fluid} />
   }
-
-
-  return <Img fluid={data.file.childImageSharp.fluid} />
 }
 
 export default Image

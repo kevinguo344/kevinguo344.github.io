@@ -13,7 +13,7 @@ export default function Project({
   return (
     <Container> 
         <Helmet>
-			<title>{frontmatter.title}</title>
+			<title>{frontmatter.title} | Kevin Guo</title>
 		</Helmet>
 		<Navbar></Navbar>
 		<Row>

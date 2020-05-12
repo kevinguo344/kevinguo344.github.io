@@ -69,13 +69,13 @@ The finalized design of communIT stands 76 inches (193 cm) tall and 125 inches (
 	<div class="six columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
 		<img src="../images/panel_closed.png" alt="Basic" width="100%" style="margin: 0 auto"/>
-		Two panels closed with acrylic surface
+		<em>Two panels closed with acrylic surface</em>
 		</span>
 	</div>
 	<div class="six columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
 		<img src="../images/panel_open.png" alt="Basic" width="100%" style="margin: 0 auto"/>
-		Two panels opened with LED grooves and strips
+		<em>Two panels opened with LED grooves and strips</em>
 		</span>
 	</div>
 </div>

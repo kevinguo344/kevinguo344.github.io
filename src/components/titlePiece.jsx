@@ -34,42 +34,42 @@ let projects = {
 		title: "RoMA",
 		sub: "Interactive Fabrication in AR",
 		link: "projects/roma",
-		img: "./assets/icons/roma.svg",
+		img: "./roma.svg",
 		color: "rgba(227,181,5,0.325)"
 	},
 	crochetmatic: {
 		title: "CrochetMatic",
 		sub: "Knitting in 3D",
 		link: "projects/crochetmatic",
-		img: "./assets/icons/crochetmatic.svg",
+		img: "./crochetmatic.svg",
 		color: "rgba(219,80,74,0.325)"
 	},
-	/*distopia: {
+	distopia: {
 		title: "Distopia",
 		sub: "Build a Better Voting District",
 		link: "projects/distopia",
-		img: "./assets/icons/distopia.svg",
+		img: "./distopia.svg",
 		color: "rgba(138,201,38,0.325)"
-	},*/
+	},
 	communit: {
 		title: "communIT",
 		sub: "A Responsive Public Environment",
 		link: "projects/communit",
-		img: "./assets/icons/transform.svg",
+		img: "./communit.svg",
 		color: "rgba(58,153,215,0.325)"
 	},
 	cera: {
 		title: "CERA",
 		sub: "Detailed extrusion at Architectural Scale",
 		link: "projects/cera",
-		img: "./assets/icons/cera.svg",
+		img: "./cera.svg",
 		color: "rgba(138,201,38,0.325)"
 	},
 	ori:{
 		title: "Ori",
 		sub: "Robotic Interiors",
 		link: "projects/ori",
-		img: "./assets/icons/ori.svg",
+		img: "./ori.svg",
 		color: "rgba(58,153,215,0.325)"
 	}
 }

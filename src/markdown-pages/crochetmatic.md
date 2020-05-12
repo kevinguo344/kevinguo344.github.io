@@ -81,7 +81,7 @@ With an idea of what the final knits would look like, it was onto building the m
 2. An array of needles powered by a Teensy 3.5 board
 
 <span style="display:block;text-align:center">
-<img src="../images/part-overview.svg" alt="Label" width="75%" style="margin: 0 auto"/>
+<img src="../vectors/part-overview.svg" alt="Label" width="75%" style="margin: 0 auto"/>
 </span>
 
 ### XY Bed
@@ -90,10 +90,8 @@ The XY bed was built and assembled by [Prof. Scott Hudson](https://hcii.cmu.edu/
 ### Needle Array
 3D knitting (or Volumetric knitting) was untried while I was working on the project, and the most daunting part was figuring out how to build the needles. The idea was to build an entire "bed" of needles, but what they would look like and how they would work was completely unknown. We couldn\'t copy them from existing knitting machine needles, which are meant solely for flat 2D planes, but we could use some of the basics of the designs to base how the needles would work. The most helpful was [A Compiler for 3D Machine Knitting](https://www.disneyresearch.com/publication/machine-knitting-compiler/) made in Carnegie Mellon University, which described a way to make knitted 2D shells of 3D forms. The computer simulations provided created a starting point of understanding how the knits would interact with each other.
 
-<span style="display:block;text-align:center">
-<img src="./images/computer_sim.gif" alt="single" width="70%" style="margin: 0 auto"/>
+![computer sim](../images/computer_sim.gif)
 *Simulation of a single knit on an industry knitting machine from [A Compiler for 3D Machine Knitting](https://www.disneyresearch.com/publication/machine-knitting-compiler/)*
-</span>
 
 The needles for our machine went through multiple iterations, with each version drastically different from the previous versions.
 
@@ -158,7 +156,7 @@ Each new command was added or edited in the Commands.cpp file of the Repetier fi
 There were also problems ensuring that the servos, which were chosen for their inexpensive price rather than precision, could perform the repicate the exact motion from needle to needle reliably. The solution was to exaggerate the movements of the needle to ensure that each motion would complete its requisite task.
 
 <span style="display:block;text-align:center">
-<img src="./images/row.gif" alt="Label" width="75%" style="margin: 0 auto"/>
+<img src="../images/row.gif" alt="Label" width="75%" style="margin: 0 auto"/>
 *An early version of the five needle row. Even though the needles are programmed to move identically, the actual movements are far from identical.*
 </span>
 
