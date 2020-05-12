@@ -22,9 +22,15 @@ const Image = () => {
             ...GatsbyImageSharpFluid
           }
         }
+        extension
+        publicURL
       }
     }
   `)
+  if (!childImageSharp && extension === 'svg') {
+    return <img style={imageStyle} src={publicURL} alt={alt} />
+  }
+
 
   return <Img fluid={data.file.childImageSharp.fluid} />
 }
