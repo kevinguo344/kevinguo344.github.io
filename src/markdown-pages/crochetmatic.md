@@ -9,10 +9,10 @@ title: "CrochetMatic: Volumetric 3D Knitting"
 
 <div class="row">
 	<div class="six columns" style="display:block;text-align:center">
-		<img src="./images/crochetmatic.png" alt="Crochetmatic" width="100%" style="margin: 0 auto"/>
+		<img src="../images/crochetmatic.png" alt="Crochetmatic" width="100%" style="margin: 0 auto"/>
 	</div>
 	<div class="six columns" style="display:block;text-align:center">
-		<img src="./images/full-view.svg" alt="That's me in that pic" width="100%" style="margin: 0 auto"/>
+		<img src="../images/full-view.svg" width="100%" style="margin: 0 auto"/>
 	</div>
 </div>
 
@@ -31,21 +31,21 @@ After spending the first two weeks of summer learning how to knit, I learned tha
 <div class="row">
 	<div class="six columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/voxel-single.jpg" alt="Basic" width="75%" style="margin: 0 auto"/>
+		<img src="../images/voxel-single.jpg" alt="Basic" width="75%" style="margin: 0 auto"/>
 		*Initial observation sketch of a unit voxel*
 		</span>
 		<span style="display:block;text-align:center">
-		<img src="./images/basic.png" alt="Basic" width="75%" style="margin: 0 auto"/>
+		<img src="../images/basic.png" alt="Basic" width="75%" style="margin: 0 auto"/>
 		*Final modeled basic knit voxel*
 		</span>
 	</div>
 	<div class="six columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/voxel-double.jpg" alt="Basic" width="75%" style="margin: 0 auto"/>
+		<img src="../images/voxel-double.jpg" alt="Basic" width="75%" style="margin: 0 auto"/>
 		*Initial observation sketch of a junction voxel*
 		</span>
 		<span style="display:block;text-align:center">
-		<img src="./images/junction.png" alt="Junction" width="75%" style="margin: 0 auto"/>
+		<img src="../images/junction.png" alt="Junction" width="75%" style="margin: 0 auto"/>
 		*Final modeled junction knit voxels*
 		</span>
 	</div>
@@ -56,19 +56,19 @@ Each knit followed a path of points, which I was able to export and joint togeth
 <div class="row">
 	<div class="four columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/single_layer.gif" alt="single" width="100%" style="margin: 0 auto"/>
+		<img src="../images/single_layer.gif" alt="single" width="100%" style="margin: 0 auto"/>
 		*Simulating a single layer*
 		</span>
 	</div>
 	<div class="four columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/multiple_layers.gif" alt="multiple" width="100%" style="margin: 0 auto"/>
+		<img src="../images/multiple_layers.gif" alt="multiple" width="100%" style="margin: 0 auto"/>
 		*Simulating  multiple layers*
 		</span>
 	</div>
 	<div class="four columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/real_prism.jpg" alt="Label" width="100%" style="margin: 0 auto"/>
+		<img src="../images/real_prism.jpg" alt="Label" width="100%" style="margin: 0 auto"/>
 		*Knitted "Cube" I made*
 		</span>
 	</div>
@@ -81,7 +81,7 @@ With an idea of what the final knits would look like, it was onto building the m
 2. An array of needles powered by a Teensy 3.5 board
 
 <span style="display:block;text-align:center">
-<img src="./images/part-overview.svg" alt="Label" width="75%" style="margin: 0 auto"/>
+<img src="../images/part-overview.svg" alt="Label" width="75%" style="margin: 0 auto"/>
 </span>
 
 ### XY Bed
@@ -100,19 +100,19 @@ The needles for our machine went through multiple iterations, with each version 
 <div class="row">
 	<div class="four columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/first_version.svg" alt="Junction" width="50%" style="margin: 0 auto"/>
+		<img src="../images/first_version.svg" alt="Junction" width="50%" style="margin: 0 auto"/>
 		*Initial Needle Design*
 		</span>
 	</div>
 	<div class="four columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/next_version.svg" alt="Basic" width="40%" style="margin: 0 auto"/>
+		<img src="../images/next_version.svg" alt="Basic" width="40%" style="margin: 0 auto"/>
 		*Needle Design 7.0*
 		</span>
 	</div>
 	<div class="four columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/final_version.svg" alt="Basic" width="70%" style="margin: 0 auto"/>
+		<img src="../images/final_version.svg" alt="Basic" width="70%" style="margin: 0 auto"/>
 		*Final Version*
 		</span>
 	</div>
@@ -123,7 +123,7 @@ The final needle version required minimal custom parts and instead relied upon o
 Each row would have in total 5 different needles, meaning that there would have to be a total of 10 servo motors driven. The end goal was to eventually have an entire series of these 5 needle rows to built.
 
 <span style="display:block;text-align:center">
-<img src="./images/needle-parts.svg" alt="Label" width="75%" style="margin: 0 auto"/>
+<img src="../images/needle-parts.svg" alt="Label" width="75%" style="margin: 0 auto"/>
 </span>
 
 ### Making the Knits
@@ -133,14 +133,14 @@ With all these pieces, perhaps the most difficult part of the project was progra
 After building a unit version of the needle, I made a sequence of motions to create knits by hand and the actuated needle, which you can see below:
 
 <span style="display:block;text-align:center">
-<img src="./images/loop-by-hand.gif" alt="Label" width="75%" style="margin: 0 auto"/>
+<img src="../images/loop-by-hand.gif" alt="Label" width="75%" style="margin: 0 auto"/>
 *Looping by hand*
 </span>
 
 These motions were turned into the 4 separate steps you see below, which formed the basis of the ultimate sequence for creating knits.
 
 <span style="display:block;text-align:center">
-<img src="./images/steps.svg" alt="Label" width="100%" style="margin: 0 auto"/>
+<img src="../images/steps.svg" alt="Label" width="100%" style="margin: 0 auto"/>
 *Steps to create a knit*
 </span>
 
@@ -176,8 +176,8 @@ With the toolpaths set, I could output a G-code file from Fusion360, which after
 		<iframe width="560" height="250" src="https://drive.google.com/file/d/1NX24JxTp0RCihOpacNhDnv6LlEIOh0n9/preview"></iframe>
 	</div>
 	<div class="five columns" style="display:block;text-align:center">
-	<img src="./images/scarf.png" alt="Label" width="100%" style="margin: 0 auto"/>
-*A scarf made on CrochetMatic*
+	<img src="../images/scarf.png" alt="Label" width="100%" style="margin: 0 auto"/>
+		A scarf made on CrochetMatic
 	</div>
 </div>
 

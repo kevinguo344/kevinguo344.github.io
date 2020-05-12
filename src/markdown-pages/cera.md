@@ -7,10 +7,8 @@ title: "CERA: Ceramic Extruding Robot Arm"
 ###### January 2019 - Present
 ##### **Kevin Guo**, Madeleine Eggers, Karolina Piorko, Veronika Varga, Jenny Sabin
 
-<span style="display:block;text-align:center">
-<img src='../images/cera.jpg" width="90%" style="margin: 0 auto"/>
+![CERA fully assembled](../images/cera.jpg)
 *CERA fully assembled*
-</span>
 
 For Spring 2019, I took [Prof. Jenny Sabin\'s](http://www.jennysabin.com/) research seminar in Matter Design Computation. As part of the seminar, I worked on a brand-new extruder system for the lab\'s Sulla robotic arm, a system we call CERA (Ceramic Extruding Robot Arm). I continued work on it through the Summer and into Fall 2019.
 
@@ -20,14 +18,11 @@ In the past, the Lab used a pneumatic ceramic extruder system used for [RoboSens
 
 ### Design
 
-<span style="display:block;text-align:center">
-<img src='../images/drawing_extruder1.png' alt="Basic" width="75%" style="margin: 0 auto"/>
+![Exploded view of CERA](../images/drawing_extruder1.png)
 *Exploded view of CERA*
-</span>
-<span style="display:block;text-align:center">
-<img src='../images/drawing_cutaway.png' alt="Basic" width="75%" style="margin: 0 auto"/>
+
+![Cutaway diagram of CERA](../images/drawing_cutaway.png)
 *Cutaway diagram of CERA on robot arm*
-</span>
 
 The overall design of CERA is centered around a 2ft long 4.5in diameter aluminum tube with a plunger inside. The plunger is attached to a leadscrew, which itself is driven by a worm gearbox. This gearbox is powered by a 1712oz-in NEMA34 Closed Loop Stepper Motor.
 
@@ -35,10 +30,8 @@ The overall design of CERA is centered around a 2ft long 4.5in diameter aluminum
 
 #### Motor
 
-<span style="display:block;text-align:center">
-<img src='../images/motors.png' width="75%" style="margin: 0 auto"/>
+![NEMA34](../images/motors.png)
 *1712oz-in NEMA34 Closed Loop Stepper Motor*
-</span>
 
 One of the first decisions that had to be made was which motor to use for the extruder. A stepper motor powered extruder was attempted before in the lab but had to be abandoned as discrepancies between the motor\'s reported and actual position made it virtually impossible use accurately. That ultimately blocked progress on RoboSense and forced it to be shelving until I arrived at the lab.
 
@@ -50,10 +43,8 @@ To command the robot, we decided upon [Machina](https://github.com/RobotExMachin
 
 #### Digital I/O Communication
 
-<span style="display:block;text-align:center">
-<img src='../images/abb-inside.jpg' width="75%" style="margin: 0 auto"/>
+![inside abb](../images/abb-inside.jpg)
 *Inside of an ABB IRC5*
-</span>
 
 The next step was figuring out how to communicate between Grasshopper, the robot, and CERA all at once. The initial communication system involved using Firefly, a Grasshopper plugin for microcontrollers, to send Serial messages over a very long USB cable in this format: `Steps/Pulse Width`. So the Serial message `500/250` would be read by the Arduino as move 500 steps counterclockwise with a 250 µs delay in between pulses.
 

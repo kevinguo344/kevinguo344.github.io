@@ -7,10 +7,8 @@ title: "communIT"
 ###### January 2019 - Present
 ##### **Kevin Guo**, Carlos Aguiar, Alex Zhu, Keith Green
 
-<span style="display:block;text-align:center">
-<img src="./images/communIT.png" width="90%" style="margin: 0 auto"/>
+![CERA fully assembled](../images/communIT.png)
 *A rendering of communIT*
-</span>
 
 As part of my Master of Engineering (MEng) in Mechanical Engineering, I will be working on communIT, a project of Prof. Keith Green\'s [Architectural Robotics Lab (ARL)](https://arl.human.cornell.edu/). transFORM is a room-scaled, kirigami-inspired robotic environment for public spaces. For more information, go to the [ARL page on transFORM](https://arl.human.cornell.edu/research-transFORM.html).
 
@@ -20,10 +18,8 @@ I\'ve always been interested in architecture and for my [Kessler Fellowship](htt
 
 ### User Research & Concept Design
 
-<span style="display:block;text-align:center">
-<img src="./images/original_communit.png" width="90%" style="margin: 0 auto"/>
+![CERA fully assembled](../images/original_communit.png)
 *Carlos with the original version of communIT at MVR Commons*
-</span>
 
 The previous version of communIT was an non-functional full-scale prototype that was made out of particle board and cardboard with velcro squares attached throughout the sides. Carlos Aguiar conducted user studies with this protoype over a course of 5 weeks in which pairs of students at Cornell would "co-design" by reconfiguring the prototype, attach "peripherals," and act out the activities they\'d want do with an actual working communIT. The point of these exercises was to see what people would use communIT for, what features they wanted in a working version, and what design shortcomings were present with the existing version.
 
@@ -37,32 +33,28 @@ These findings were then sorted into 17 specific use cases and 6 overall themes:
 
 Taking the findings and use cases, I developed scenarios for each of the use cases, detailing how a user might use communIT in each of the configurations and how they might best interact with the panels (touch screen, web app, gesture-based interface, etc.) in order to inform both the types of configurations were most useful and give an idea of the technologies we'd need to integrate in the final design.
 
-<span style="display:block;text-align:center">
-<img src="./images/design_cases_cropped.png" width="90%" style="margin: 0 auto"/>
+![design cases](../images/design_cases_cropped.png)
 *All design cases and user scenarios*
-</span>
 
 With all the cases developed and scenarios, Carlos spent of the semester developing the new version of communIT with feedback from me and the rest of the team.
 
 <div class="row">
 	<div class="six columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/version1.png" alt="Basic" width="100%" style="margin: 0 auto"/>
-		*Scale model of initial version of communIT*
+		<img src="../images/version1.png" alt="Basic" width="100%" style="margin: 0 auto"/>
+		<em>Scale model of initial version of communIT</em>
 		</span>
 	</div>
 	<div class="six columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/version2.png" alt="Basic" width="100%" style="margin: 0 auto"/>
-		*Scale model of another proposed design for communIT*
+		<img src="../images/version2.png" alt="Basic" width="100%" style="margin: 0 auto"/>
+		<em>Scale model of another proposed design for communIT</em>
 		</span>
 	</div>
 </div>
 
-<span style="display:block;text-align:center">
-<img src="./images/model.png" width="90%" style="margin: 0 auto"/>
+![Scale model](../images/model.png)
 *Scale model of final concept design for communIT*
-</span>
 
 ### Assembly Design & Manufacturing
 
@@ -70,29 +62,25 @@ With the concept for communIT completed, I took over the rest of the design proc
 
 The finalized design of communIT stands 76 inches (193 cm) tall and 125 inches (317.5 cm) wide. This size was chosen as it was taller than an adult man but not so tall as to feel completely overwhelming. The artifact is made of 8 panels, ranging in size from 30 in by 20 in with the smallest panel to 77 inch by 45 inch for the largest panel.
 
-<span style="display:block;text-align:center">
-<img src="./images/panel_explode.png" width="90%" style="margin: 0 auto"/>
+![Exploded render](../images/panel_explode.png)
 *Exploded render of the panel assembly*
-</span>
 
 <div class="row">
 	<div class="six columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/panel_closed.png" alt="Basic" width="100%" style="margin: 0 auto"/>
-		*Two panels closed with acrylic surface*
+		<img src="../images/panel_closed.png" alt="Basic" width="100%" style="margin: 0 auto"/>
+		Two panels closed with acrylic surface
 		</span>
 	</div>
 	<div class="six columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
-		<img src="./images/panel_open.png" alt="Basic" width="100%" style="margin: 0 auto"/>
-		*Two panels opened with LED grooves and strips *
+		<img src="../images/panel_open.png" alt="Basic" width="100%" style="margin: 0 auto"/>
+		Two panels opened with LED grooves and strips
 		</span>
 	</div>
 </div>
 
-<span style="display:block;text-align:center">
-<img src="./images/light_test_temporary.png" width="90%" style="margin: 0 auto"/>
+![test panel](../images/light_test_temporary.png)
 *A test panel with embedded LEDs being tested.*
-</span>
 
 #### Assembly is still in progress and this page will be updated as work progresses. Stay Tuned!
