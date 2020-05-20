@@ -67,16 +67,19 @@ These outputs made it very easy to synchronize actions between robot and extrude
 |`digitalWrite(DO10_1, False)`| Turns off stepper motor |
 
 <div class="row">
-	<div class="eight columns offset-by-two" style="display:block;text-align:center">
+	<div class="five columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
 		<img src='../images/line-test.png' width="100%" style="margin: 0 auto"/>
-		<em>CERA extruding ceramic for a "line test"</em>
+		*CERA extruding ceramic for a "line test"*
+		</span>
+	</div>
+	<div class="seven columns" style="display:block;text-align:center">
+		<span style="display:block;text-align:center">
+		<img src='../images/line-test-full.jpg' alt="Basic" width="100%" style="margin: 0 auto"/>
+		*Full results of first CERA line test*
 		</span>
 	</div>
 </div>
-
-![full line test](../images/line-test-full.jpg)
-*Full results of first CERA line test*
 
 ### Adapative Print
 
