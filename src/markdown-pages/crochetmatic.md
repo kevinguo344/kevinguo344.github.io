@@ -9,10 +9,10 @@ title: "CrochetMatic: Volumetric 3D Knitting"
 
 <div class="row">
 	<div class="six columns" style="display:block;text-align:center">
-		<img src="../images/crochetmatic.png" alt="Crochetmatic" width="100%" style="margin: 0 auto"/>
+		<img src="../images/crochetmatic.png" alt="Crochetmatic" style="margin: 0 auto"/>
 	</div>
 	<div class="six columns" style="display:block;text-align:center">
-		<img src="../images/full-view.svg" width="100%" style="margin: 0 auto"/>
+		<img src="../images/full-view.png" style="margin: 0 auto"/>
 	</div>
 </div>
 
@@ -32,21 +32,21 @@ After spending the first two weeks of summer learning how to knit, I learned tha
 	<div class="six columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
 		<img src="../images/voxel-single.jpg" alt="Basic" width="75%" style="margin: 0 auto"/>
-		*Initial observation sketch of a unit voxel*
+		<em>Initial observation sketch of a unit voxel</em>
 		</span>
 		<span style="display:block;text-align:center">
 		<img src="../images/basic.png" alt="Basic" width="75%" style="margin: 0 auto"/>
-		*Final modeled basic knit voxel*
+		<em>Final modeled basic knit voxel</em>
 		</span>
 	</div>
 	<div class="six columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
 		<img src="../images/voxel-double.jpg" alt="Basic" width="75%" style="margin: 0 auto"/>
-		*Initial observation sketch of a junction voxel*
+		<em>Initial observation sketch of a junction voxel</em>
 		</span>
 		<span style="display:block;text-align:center">
 		<img src="../images/junction.png" alt="Junction" width="75%" style="margin: 0 auto"/>
-		*Final modeled junction knit voxels*
+		<em>Final modeled junction knit voxels</em>
 		</span>
 	</div>
 </div>
@@ -57,7 +57,7 @@ Each knit followed a path of points, which I was able to export and joint togeth
 	<div class="four columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
 		<img src="../images/single_layer.gif" alt="single" width="100%" style="margin: 0 auto"/>
-		*Simulating a single layer*
+		Simulating a single layer*
 		</span>
 	</div>
 	<div class="four columns" style="display:block;text-align:center">
@@ -80,9 +80,7 @@ With an idea of what the final knits would look like, it was onto building the m
 1. An XY Bed powered by an Arduino Mega and RAMPS board
 2. An array of needles powered by a Teensy 3.5 board
 
-<span style="display:block;text-align:center">
-<img src="../images/part-overview.svg" alt="Label" width="75%" style="margin: 0 auto"/>
-</span>
+![Parts Overview](../images/parts-overview.png)
 
 ### XY Bed
 The XY bed was built and assembled by [Prof. Scott Hudson](https://hcii.cmu.edu/people/scott-hudson) from Carnegie Mellon University. Based off a regular 3D printer bed, it\'s made up of a 80-20 frame driven by an Arduino Mega with a RAMPS board mounted on it. The Arduino Mega controlled most of the movements on the machine with a RAMPS 1.4 board. The RAMPS board was typically meant for building DIY 3D printers, but because of CrochetMatic didn\'t have a heating element, I had to put two resistors and a potentiometer (a dial) attached to where the heat sensors were supposed to be. This was to trick the board into thinking that there is a heating element on the machine (there isn’t) so that it will use the extruder properly (how the latch servos and the yarn extruder are operated).
@@ -90,31 +88,23 @@ The XY bed was built and assembled by [Prof. Scott Hudson](https://hcii.cmu.edu/
 ### Needle Array
 3D knitting (or Volumetric knitting) was untried while I was working on the project, and the most daunting part was figuring out how to build the needles. The idea was to build an entire "bed" of needles, but what they would look like and how they would work was completely unknown. We couldn\'t copy them from existing knitting machine needles, which are meant solely for flat 2D planes, but we could use some of the basics of the designs to base how the needles would work. The most helpful was [A Compiler for 3D Machine Knitting](https://www.disneyresearch.com/publication/machine-knitting-compiler/) made in Carnegie Mellon University, which described a way to make knitted 2D shells of 3D forms. The computer simulations provided created a starting point of understanding how the knits would interact with each other.
 
-<span style="display:block;text-align:center">
-<img src="./images/computer_sim.gif" alt="single" width="70%" style="margin: 0 auto"/>
+![Disney Paper](../images/computer_sim.gif)
 *Simulation of a single knit on an industry knitting machine from [A Compiler for 3D Machine Knitting](https://www.disneyresearch.com/publication/machine-knitting-compiler/)*
-</span>
 
 The needles for our machine went through multiple iterations, with each version drastically different from the previous versions.
 
 <div class="row">
 	<div class="four columns" style="display:block;text-align:center">
-		<span style="display:block;text-align:center">
-		<img src="../images/first_version.svg" alt="Junction" width="50%" style="margin: 0 auto"/>
-		*Initial Needle Design*
-		</span>
+	<img src="../images/first_version.png" alt="Label" style="margin: 0 auto"/>
+		<em>Initial Needle Design</em>
 	</div>
 	<div class="four columns" style="display:block;text-align:center">
-		<span style="display:block;text-align:center">
-		<img src="../images/next_version.svg" alt="Basic" width="40%" style="margin: 0 auto"/>
-		*Needle Design 7.0*
-		</span>
+		<img src="../images/next_version.png" alt="Basic" style="margin: 0 auto"/>
+		<em>Needle Design 7.0</em>
 	</div>
 	<div class="four columns" style="display:block;text-align:center">
-		<span style="display:block;text-align:center">
-		<img src="../images/final_version.svg" alt="Basic" width="70%" style="margin: 0 auto"/>
-		*Final Version*
-		</span>
+		<img src="../images/final_version.png" alt="Basic" style="margin: 0 auto"/>
+		<em>Final Needle Design</em>
 	</div>
 </div>
 
@@ -122,9 +112,7 @@ The final needle version required minimal custom parts and instead relied upon o
 
 Each row would have in total 5 different needles, meaning that there would have to be a total of 10 servo motors driven. The end goal was to eventually have an entire series of these 5 needle rows to built.
 
-<span style="display:block;text-align:center">
-<img src="../images/needle-parts.svg" alt="Label" width="75%" style="margin: 0 auto"/>
-</span>
+![Needle Parts](../images/needle-parts.png)
 
 ### Making the Knits
 
@@ -132,17 +120,13 @@ With all these pieces, perhaps the most difficult part of the project was progra
 
 After building a unit version of the needle, I made a sequence of motions to create knits by hand and the actuated needle, which you can see below:
 
-<span style="display:block;text-align:center">
-<img src="../images/loop-by-hand.gif" alt="Label" width="75%" style="margin: 0 auto"/>
+![Looping by Hand](../images/loop-by-hand.gif)
 *Looping by hand*
-</span>
 
 These motions were turned into the 4 separate steps you see below, which formed the basis of the ultimate sequence for creating knits.
 
-<span style="display:block;text-align:center">
-<img src="../images/steps.svg" alt="Label" width="100%" style="margin: 0 auto"/>
+![Knitting Steps](../images/steps.png)
 *Steps to create a knit*
-</span>
 
 However, translating the steps to machine movement was incredibly challenging. Because the XY bed was built using off-the-shelf components meant for 3D printers, the code driving the machine was built off of [Repetier](https://www.repetier.com/), an existing Arduino-based firmware. That meant that the machine could be moved through gcode, the language used for most existing 3D printers and CNC machines. However, there needed to be a couple modifications to make the firmware work with the motion.
 
