@@ -43,15 +43,15 @@ I proposed 3 menu interaction schemes and made interactive Javascript prototypes
 <div class="row">
 	<div class="four columns" style="display:block;text-align:center">
 		<h4>Stack Menu</h4>
-		<img src='../images/stack.svg' alt="AR Interactions" width="50%" style="margin: 0 auto"><img/>
+		<img src="../images/stack.png" alt="AR Interactions" style="margin: 0 auto" />
 	</div>
 	<div class="four columns" style="display:block;text-align:center">
 		<h4>Tree Menu</h4>
-		<img src="../images/tree.svg" alt="AR Interactions" width="50%" style="margin: 0 auto"><img/>
+		<img src="../images/tree.png" alt="AR Interactions" width="50%" style="margin: 0 auto"><img/>
 	</div>
 	<div class="four columns" style="display:block;text-align:center">
 		<h4>Ring Menu</h4>
-		<img src="../images/ring.svg" alt="AR Interactions" width="50%" style="margin: 0 auto"><img/>
+		<img src="../images/ring.png" alt="AR Interactions" width="50%" style="margin: 0 auto"><img/>
 	</div>
 </div>
 <div class="row">
