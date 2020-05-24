@@ -43,17 +43,18 @@ I proposed 3 menu interaction schemes and made interactive Javascript prototypes
 <div class="row">
 	<div class="four columns" style="display:block;text-align:center">
 		<h4>Stack Menu</h4>
-		<img src="../images/stack.png" alt="AR Interactions" style="margin: 0 auto" />
+		<img src="../images/stack.png" alt="stack" style="margin: 0 auto"/>
 	</div>
 	<div class="four columns" style="display:block;text-align:center">
 		<h4>Tree Menu</h4>
-		<img src="../images/tree.png" alt="AR Interactions" width="50%" style="margin: 0 auto"><img/>
+		<img src="../images/tree.png" alt="tree" style="margin: 0 auto"/>
 	</div>
 	<div class="four columns" style="display:block;text-align:center">
 		<h4>Ring Menu</h4>
-		<img src="../images/ring.png" alt="AR Interactions" width="50%" style="margin: 0 auto"><img/>
+		<img src="../images/ring.png" alt="ring" style="margin: 0 auto"/>
 	</div>
 </div>
+
 <div class="row">
 	<div class="four columns framer-container">
 		<iframe class="framer" src="https://framer.cloud/ilfyY/"></iframe>
@@ -68,28 +69,25 @@ I proposed 3 menu interaction schemes and made interactive Javascript prototypes
 
 The stack menu was chosen as the menu because it was the easiest to implement, didn\'t clutter up too much of the user\'s field of view, and conformed more directly to the user\'s actions. However, I realized pretty early on that the stack menu\'s design made it hard to remember what action was chosen and what you had to do to complete the task. To aid with that, I used the blank space in the middle of the menu as a reminder of why an item or action needed to be selected (shown below).
 
+![roma labels](../images/roma_labels.png)
+*The Logical Structure of the Marking Menu*
+
 <div class="row">
 	<div class="six columns offset-by-three" style="display:block;text-align:center">
 		<img src="../images/roma_labels.png" />
-		<em>The Logical Structure of the Marking Menu</em>
+		<em></em>
 	</div>
 </div>
 
 I had to make one for every action and as you can see below...
 
-<div class="row">
-	<div class="six columns offset-by-three" style="display:block;text-align:center">
-		<img src="../images/entire_set.png" />
-		<em>These took a while to make</em>
-	</div>
-</div>
+![interactions](../images/entire_set.png)
+*These took a while to make*
 
 ...there were a lot of them. Along with the menus, I created a whole new set of icons for RoMA.
 
-<span style="display:block;text-align:center">
-<img src="../images/icons.svg" alt="Label" width="75%" style="margin: 0 auto"/>
+![entire set](../images/icons.png)
 *An entirely new set of icons for RoMA*
-</span>
 
 After wrangling with a custom C# engine specifically for RoMA [(courtesy from the talented Jimmy Briggs)](http://jimmybriggs.net/), my marking menu eventually was integrated with the system and was demoed for interested researchers and designers alike.
 
