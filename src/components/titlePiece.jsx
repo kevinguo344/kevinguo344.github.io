@@ -19,7 +19,8 @@ export class Tile extends React.Component{
 					<div className={"titleCard " + this.side}>
 						<div className="titleContainer">
 							<h2>{this.project.title}</h2>
-							<h6>{this.project.sub}</h6>
+							<h5>{this.project.sub}</h5>
+							<p>{this.project.location}</p>
 						</div>
 						<div className="background" style={this.style}></div>
 					</div>
@@ -33,6 +34,7 @@ let projects = {
 	roma: {
 		title: "RoMA",
 		sub: "Interactive Fabrication in AR",
+		location: "Design Lab",
 		link: "projects/roma",
 		img: "./assets/icons/roma.svg",
 		color: "rgba(227,181,5,0.325)"
@@ -40,6 +42,7 @@ let projects = {
 	crochetmatic: {
 		title: "CrochetMatic",
 		sub: "Knitting in 3D",
+		location: "Design Lab",
 		link: "projects/crochetmatic",
 		img: "./assets/icons/crochetmatic.svg",
 		color: "rgba(219,80,74,0.325)"
@@ -54,6 +57,7 @@ let projects = {
 	communit: {
 		title: "communIT",
 		sub: "A Responsive Public Environment",
+		location: "Architectural Robotics Lab",
 		link: "projects/communit",
 		img: "./assets/icons/transform.svg",
 		color: "rgba(58,153,215,0.325)"
@@ -61,13 +65,15 @@ let projects = {
 	cera: {
 		title: "CERA",
 		sub: "Detailed extrusion at Architectural Scale",
+		location: "Jenny Sabin Lab",
 		link: "projects/cera",
 		img: "./assets/icons/cera.svg",
 		color: "rgba(138,201,38,0.325)"
 	},
 	ori:{
-		title: "Ori",
+		title: "Design Assist",
 		sub: "Robotic Interiors",
+		location: "Ori Inc.",
 		link: "projects/ori",
 		img: "./assets/icons/ori.svg",
 		color: "rgba(58,153,215,0.325)"
