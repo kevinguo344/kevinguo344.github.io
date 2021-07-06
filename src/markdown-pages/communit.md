@@ -4,10 +4,13 @@ title: "communIT"
 ---
 
 ### communIT
-###### January 2019 - Present
+###### January 2019 - December 2019
 ##### **Kevin Guo**, Carlos Aguiar, Alex Zhu, Keith Green
 
-![CERA fully assembled](../images/communIT.png)
+##### Media Architecture Biennale 2020 **(MAB 2020)** 
+[Read the Paper here](https://drive.google.com/file/d/1LiVyr0hbJw98oIO0iABFEmsi58MrRmah/view?usp=sharing)
+
+![communIT render](../images/communIT.png)
 *A rendering of communIT*
 
 As part of my Master of Engineering (MEng) in Mechanical Engineering, I will be working on communIT, a project of Prof. Keith Green\'s [Architectural Robotics Lab (ARL)](https://arl.human.cornell.edu/). transFORM is a room-scaled, kirigami-inspired robotic environment for public spaces. For more information, go to the [ARL page on transFORM](https://arl.human.cornell.edu/research-transFORM.html).
@@ -83,4 +86,5 @@ The finalized design of communIT stands 76 inches (193 cm) tall and 125 inches (
 ![test panel](../images/light_test_temporary.png)
 *A test panel with embedded LEDs being tested.*
 
-#### Assembly is still in progress and this page will be updated as work progresses. Stay Tuned!
+![fully assembled](../images/full_assembled.png)
+*The fully assembled version of communIT*

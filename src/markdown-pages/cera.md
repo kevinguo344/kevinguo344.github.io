@@ -4,8 +4,10 @@ title: "CERA: Ceramic Extruding Robot Arm"
 ---
 
 ### CERA: Ceramic Extruding Robot Arm
-###### January 2019 - Present
+###### January 2019 - December 2019
 ##### **Kevin Guo**, Madeleine Eggers, Karolina Piorko, Veronika Varga, Jenny Sabin
+
+[Github Repository](https://github.com/kevinguo344/JSEndEffector)
 
 ![CERA fully assembled](../images/cera.jpg)
 *CERA fully assembled*
@@ -52,6 +54,10 @@ While this solution was simple to implement, it didn\'t solve the inherent separ
 
 After some searching, I learned that the ABB IRC5 robot controller that we were using had a I/O module built in called an DSQC 652. More importantly, the DSQC 652 had 16 digital outputs. A digital output is only capable of spitting out a 1 or a 0, but that would be enough.
 
+##### First Approach
+My initial attempt to communicate between the Robot and our controller used all 16 digital outputs available. The idea is that each 
+
+##### Final Approach
 Two digital outputs from the ABB\'s I/O module are wired from the inside of the IRC5 controller, past a barrier wall, up the robot arm, and onto the mounting plate with the Arduino board. One digital output dictates which direction the stepper motor would turn (On means clockwise, Off means counter-clockwise), which dictates whether the extruder piston goes forward or back. The other digital output is an On/Off switch for the stepper motor; as long as the output was On, the motor would make another "step" and continue rotating.
 
 These outputs made it very easy to synchronize actions between robot and extruder. As all commands went through Machina and therefore the robot, the sequence guaranteed extrusion concurrent with robot movement.
@@ -65,6 +71,8 @@ These outputs made it very easy to synchronize actions between robot and extrude
 |`wait(<time in milliseconds>)`| Gives extruder some time to "prime" |
 |`move(<some vector>)`| Moves robot a certain amount |
 |`digitalWrite(DO10_1, False)`| Turns off stepper motor |
+
+
 
 <div class="row">
 	<div class="five columns" style="display:block;text-align:center">
@@ -80,9 +88,3 @@ These outputs made it very easy to synchronize actions between robot and extrude
 		</span>
 	</div>
 </div>
-
-### Adapative Print
-
-Adaptive print is a new part of RoboSense 3.0 that incorporates work done [previously](http://www.ttistengteng.com/PicDetail.aspx?id=489) and will involve surface reconstruction from a Kinect.
-
-#### This page will be updated with more information as work progresses. Stay Tuned!
