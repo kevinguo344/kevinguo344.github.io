@@ -7,8 +7,8 @@ export class Navbar extends React.Component{
 		return (
 			<Row>
 				<Column width="1">
-					<Link to = "/">
-						<h2><i className="fas fa-angle-double-left"></i></h2>
+					<Link to = "/" style={{textDecoration: "none"}}>
+						<h2>←</h2>
 					</Link>
 				</Column>
 				<Column width="11">

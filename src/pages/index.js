@@ -17,7 +17,7 @@ class IndexPage extends Component {
 				<Page>
 					<Row>
 						<Column width = "6">
-							<h1><strong>Hi, I'm Kevin</strong></h1>
+							<h1 style={{marginTop: "2em"}}><strong>Hi, I'm Kevin</strong></h1>
 						</Column>
 					</Row>
 					<Row>
@@ -34,7 +34,7 @@ class IndexPage extends Component {
 					</Row>
 					<MediaQuery minWidth={550}>
 						<Row>
-							<h2><strong>Projects</strong></h2>
+							<h2 style={{marginTop: "1em"}}><strong>Projects</strong></h2>
 							<p>My research focuses on the applications of robotics in design. Of special interest are the design and construction of interactive robotic environments and novel forms of robotic fabrication.</p>
 						</Row>
 						<Row>

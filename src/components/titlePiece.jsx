@@ -36,7 +36,7 @@ let projects = {
 		sub: "Interactive Fabrication in AR",
 		location: "Design Lab",
 		link: "projects/roma",
-		img: "./assets/icons/roma.svg",
+		img: "../icons/roma.svg",
 		color: "rgba(227,181,5,0.325)"
 	},
 	crochetmatic: {
@@ -44,7 +44,7 @@ let projects = {
 		sub: "Knitting in 3D",
 		location: "Design Lab",
 		link: "projects/crochetmatic",
-		img: "./assets/icons/crochetmatic.svg",
+		img: "../icons/crochetmatic.svg",
 		color: "rgba(219,80,74,0.325)"
 	},
 	/*distopia: {
@@ -59,7 +59,7 @@ let projects = {
 		sub: "A Responsive Public Environment",
 		location: "Architectural Robotics Lab",
 		link: "projects/communit",
-		img: "./assets/icons/transform.svg",
+		img: "../icons/communit.svg",
 		color: "rgba(58,153,215,0.325)"
 	},
 	cera: {
@@ -67,7 +67,7 @@ let projects = {
 		sub: "Detailed extrusion at Architectural Scale",
 		location: "Jenny Sabin Lab",
 		link: "projects/cera",
-		img: "./assets/icons/cera.svg",
+		img: "../icons/cera.svg",
 		color: "rgba(138,201,38,0.325)"
 	},
 	ori:{
@@ -75,7 +75,7 @@ let projects = {
 		sub: "Robotic Interiors",
 		location: "Ori Inc.",
 		link: "projects/ori",
-		img: "./assets/icons/ori.svg",
+		img: "../icons/ori.svg",
 		color: "rgba(58,153,215,0.325)"
 	}
 }
