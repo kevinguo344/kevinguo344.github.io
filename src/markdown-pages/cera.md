@@ -37,7 +37,7 @@ The overall design of CERA is centered around a 2ft long 4.5in diameter aluminum
 
 One of the first decisions that had to be made was which motor to use for the extruder. A stepper motor powered extruder was attempted before in the lab but had to be abandoned as discrepancies between the motor\'s reported and actual position made it virtually impossible use accurately. That ultimately blocked progress on RoboSense and forced it to be shelving until I arrived at the lab.
 
-I stuck with using a stepper motor as I had used them extensively in previous roles and knew that a stepper would have the requisite torque to push clay through a tube. To deal with problems with positioning, I chose a closed-loop stepper motor system, a stepper motor with a built-in encoder that corrects for any discrepancies in motor position. 
+I stuck with using a stepper motor as I had used them extensively in previous roles and knew that a stepper would have the requisite torque to push clay through a tube. To deal with problems with positioning, I chose a closed-loop stepper motor system, a stepper motor with a built-in encoder that corrects for any discrepancies in motor position.
 
 #### Machina
 
@@ -55,10 +55,21 @@ While this solution was simple to implement, it didn\'t solve the inherent separ
 After some searching, I learned that the ABB IRC5 robot controller that we were using had a I/O module built in called an DSQC 652. More importantly, the DSQC 652 had 16 digital outputs. A digital output is only capable of spitting out a 1 or a 0, but that would be enough.
 
 ##### First Approach
-My initial attempt to communicate between the Robot and our controller used all 16 digital outputs available. The idea is that each 
+![comms1](../images/comms_1.png)
+*Schematic for the first digital communications system*
+
+My initial attempt to communicate between the Robot and our controller used all 16 digital outputs available (note: this is a bad idea). Each output would be a single digit in a 16 bit long binary number.
+
+![binary](../images/binary.png)
+*Example of a binary output for the number 11. (Note: for simplicity, there are only 4 outputs shown instead of the full 16)*
+
+Almost immediately, problems arose; all the intended outputs did not change at the same time, meaning that readings would be often times incorrect or wrong. Also, running 16 separate cables that had to be over 10ft (3 meters) long became very hard to deal with in the relatively tight confines we had at the lab. In retrospect, **for such a system to work, there'd need to be a clock of some sort.** This is why serial comm interfaces on most computers have 2 lines, a data line and a clock line that keeps everything in sync.
 
 ##### Final Approach
-Two digital outputs from the ABB\'s I/O module are wired from the inside of the IRC5 controller, past a barrier wall, up the robot arm, and onto the mounting plate with the Arduino board. One digital output dictates which direction the stepper motor would turn (On means clockwise, Off means counter-clockwise), which dictates whether the extruder piston goes forward or back. The other digital output is an On/Off switch for the stepper motor; as long as the output was On, the motor would make another "step" and continue rotating.
+![comms2](../images/comms_2.png)
+*Schematic for the final digital communications system*
+
+The final approach to digital communications was vastly simplified from before. Two digital outputs from the ABB\'s I/O module are wired from the inside of the IRC5 controller, past a barrier wall, up the robot arm, and onto the mounting plate with the Arduino board. One digital output dictates which direction the stepper motor would turn (On means clockwise, Off means counter-clockwise), which dictates whether the extruder piston goes forward or back. The other digital output is an On/Off switch for the stepper motor; as long as the output was On, the motor would make another "step" and continue rotating.
 
 These outputs made it very easy to synchronize actions between robot and extruder. As all commands went through Machina and therefore the robot, the sequence guaranteed extrusion concurrent with robot movement.
 
@@ -72,19 +83,23 @@ These outputs made it very easy to synchronize actions between robot and extrude
 |`move(<some vector>)`| Moves robot a certain amount |
 |`digitalWrite(DO10_1, False)`| Turns off stepper motor |
 
+#### Overview of CERA's Mechatronics
+![mechatronics_overview](../images/mechatronics_overview.png)
+*Schematic for all of CERA's Mechatronics*
 
+Commands from the Grasshopper and Machina scripts are sent via the robot's I/O unit to an Arduino Due. The Due in turn receives a digital reading from an Arduino Uno which is Off if the plunger mechanism is either too close to either end of the tube or On if it's at an acceptable distance (due to an inherent timing issue with the Arduino board, it can't the Due can't both drive the motor and read the distance sensor). Based on both these readings, the Arduino Due sends an Step pulses and Direction signal to the Stepper motor controller, which then turns the motor and moves the plunger up and down.
 
 <div class="row">
-	<div class="five columns" style="display:block;text-align:center">
+	<div class="six columns offset-by-three" style="display:block;text-align:center;margin-bottom:2em">
 		<span style="display:block;text-align:center">
 		<img src='../images/line-test.png' width="100%" style="margin: 0 auto"/>
-		*CERA extruding ceramic for a "line test"*
-		</span>
-	</div>
-	<div class="seven columns" style="display:block;text-align:center">
-		<span style="display:block;text-align:center">
-		<img src='../images/line-test-full.jpg' alt="Basic" width="100%" style="margin: 0 auto"/>
-		*Full results of first CERA line test*
+		<em>CERA extruding ceramic for a "line test"</em>
 		</span>
 	</div>
 </div>
+
+![line test](../images/line-test-full.jpg)
+*Full results of first CERA line test*
+
+![fabricate](../images/fabricate_feature.png)
+*CERA and I were featured in a photo in [Fabricate 2020](https://www.uclpress.co.uk/products/154646)*
