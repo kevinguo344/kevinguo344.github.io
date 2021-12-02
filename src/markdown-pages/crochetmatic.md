@@ -57,19 +57,19 @@ Each knit followed a path of points, which I was able to export and joint togeth
 	<div class="four columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
 		<img src="../images/single_layer.gif" alt="single" width="100%" style="margin: 0 auto"/>
-		Simulating a single layer*
+		<em>Simulating a single layer</em>
 		</span>
 	</div>
 	<div class="four columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
 		<img src="../images/multiple_layers.gif" alt="multiple" width="100%" style="margin: 0 auto"/>
-		*Simulating  multiple layers*
+		<em>Simulating  multiple layers</em>
 		</span>
 	</div>
 	<div class="four columns" style="display:block;text-align:center">
 		<span style="display:block;text-align:center">
 		<img src="../images/real_prism.jpg" alt="Label" width="100%" style="margin: 0 auto"/>
-		*Knitted "Cube" I made*
+		<em>Knitted "Cube" I made</em>
 		</span>
 	</div>
 </div>
@@ -89,12 +89,13 @@ The XY bed was built and assembled by [Prof. Scott Hudson](https://hcii.cmu.edu/
 3D knitting (or Volumetric knitting) was untried while I was working on the project, and the most daunting part was figuring out how to build the needles. The idea was to build an entire "bed" of needles, but what they would look like and how they would work was completely unknown. We couldn\'t copy them from existing knitting machine needles, which are meant solely for flat 2D planes, but we could use some of the basics of the designs to base how the needles would work. The most helpful was [A Compiler for 3D Machine Knitting](https://www.disneyresearch.com/publication/machine-knitting-compiler/) made in Carnegie Mellon University, which described a way to make knitted 2D shells of 3D forms. The computer simulations provided created a starting point of understanding how the knits would interact with each other.
 
 ![Disney Paper](../images/computer_sim.gif)
+
 *Simulation of a single knit on an industry knitting machine from [A Compiler for 3D Machine Knitting](https://www.disneyresearch.com/publication/machine-knitting-compiler/)*
 
 The needles for our machine went through multiple iterations, with each version drastically different from the previous versions.
 
 <div class="row">
-	<div class="four columns" style="display:block;text-align:center">
+	<div class="four columns" style="display:block;text-align:center;margin-bottom: 1em">
 	<img src="../images/first_version.png" alt="Label" style="margin: 0 auto"/>
 		<em>Initial Needle Design</em>
 	</div>
@@ -121,6 +122,7 @@ With all these pieces, perhaps the most difficult part of the project was progra
 After building a unit version of the needle, I made a sequence of motions to create knits by hand and the actuated needle, which you can see below:
 
 ![Looping by Hand](../images/loop-by-hand.gif)
+
 *Looping by hand*
 
 These motions were turned into the 4 separate steps you see below, which formed the basis of the ultimate sequence for creating knits.
@@ -141,17 +143,15 @@ Each new command was added or edited in the Commands.cpp file of the Repetier fi
 
 There were also problems ensuring that the servos, which were chosen for their inexpensive price rather than precision, could perform the repicate the exact motion from needle to needle reliably. The solution was to exaggerate the movements of the needle to ensure that each motion would complete its requisite task.
 
-<span style="display:block;text-align:center">
-<img src="./images/row.gif" alt="Label" width="75%" style="margin: 0 auto"/>
+![row gif](../images/row.gif)
+
 *An early version of the five needle row. Even though the needles are programmed to move identically, the actual movements are far from identical.*
-</span>
 
 In order to plan for how the needle would move, I used the CAM function built into Fusion360 with the simulated CAM tool as a stand-in for the needle, a fixed tube as analog for where the yarn was extruded from, and 2 tilted boxes representing the pushing brushes. 
 
-<span style="display:block;text-align:center">
-<img src="./images/CAM-trace.gif" alt="Label" width="75%" style="margin: 0 auto"/>
+![CAM-trace](../images/CAM-trace.gif)
+
 *Simulating needle movement in Fusion360*
-</span>
 
 With the toolpaths set, I could output a G-code file from Fusion360, which after further editing and modification, worked with the machine. And all the changes paid off when at the end of May 2018, I was able to make the machine knit a 5-needle wide scarf (almost) entirely without human intervention.
 
