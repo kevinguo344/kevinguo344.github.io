@@ -2,7 +2,7 @@ import React from 'react'
 
 export class Page extends React.Component{
     render(){
-        return(
+		return(
 			<div className = "pageView">
 				<div className = "pageContainer">
 					{this.props.children}

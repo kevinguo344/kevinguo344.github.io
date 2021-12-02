@@ -26,6 +26,30 @@ p{
 em{
 	text-align: center;
 }
+@media only screen and (min-width: 550px){
+	.home{
+		width: 100%;
+		background-image: linear-gradient(to bottom, rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url("../images/gates_background.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+@media only screen and (max-width: 550px){
+	.home{
+		width: 100%;
+		background-image: linear-gradient(to bottom, rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/gates_background.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+.home h1 strong, .home p, .home h5, .home a{
+	color: white;
+}
+.home .row{
+	width: 80%;
+	max-width: 960px;
+	margin: 0 auto;
+}
 .pageView{
 	display: flex;
 	align-items: center;

@@ -70,7 +70,7 @@ export class Column extends React.Component{
 export class Container extends React.Component{
     render(){
         return(
-			<div className = "container">
+			<div className = {this.props.home ? "home" : "container"} >
 				{this.props.children}
 			</div>
 		)
