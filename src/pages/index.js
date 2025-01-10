@@ -24,14 +24,14 @@ class IndexPage extends Component {
 						</Row>
 						<Row>
 							<Column width = "8">
-								<p>I'm a product engineer & designer at <a href="https://oriliving.com/"><strong>Ori Inc.</strong></a>, a robotic furniture company.</p>
-								<p>I'm interested in learning how technology can make design more accessible, useful, and exciting, especially in its applications to architecture and the built environment.</p>
+								<p>I'm a Design Engineer at <a href="https://sarahmeyohas.com/"><strong>Sarah Meyohas Studio</strong></a>, working at the edge of art and technology.</p>
+								<p>This website is an archive of my research experience; for my relevant experience in Industry post 2019, please refer to my resume linked <a href="https://drive.google.com/file/d/1A6l2PUh6bY0s7zW-LWEin3AzVglI4o_I/view?usp=sharing"><strong>here</strong></a></p>
 								<p>I studied at at <strong>Cornell University</strong> for a Masters of Engineering in Mechanical Engineering focusing on Robotics and Product Design and a BS in Information Science, Systems, & Technology (ISST). My advisor was <a href="https://arl.human.cornell.edu/people_keith.htm">Prof. Keith Green</a> of Design + Environmental Analysis (DEA) and I also worked with <a href = "http://www.jennysabin.com/">Prof. Jenny Sabin</a> of Architecture.</p>
 							</Column>
 							<Column width = "4">
 								<h5><a href="https://www.linkedin.com/in/kevinlguo/">LinkedIn</a></h5>
 								<h5><a href="https://drive.google.com/file/d/1A6l2PUh6bY0s7zW-LWEin3AzVglI4o_I/view?usp=sharing">Resume</a></h5>
-								<h5>Email: kg344[at]cornell.edu</h5>
+								<h5>Email: kevinlguo[at]gmail.com</h5>
 							</Column>
 						</Row>
 					</Page>
